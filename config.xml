@@ -262,21 +262,15 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>8</int>
-          <string>DEPLOYMENT_JDBC_IDM_PASSWORD</string>
-          <string>Txuiu3IdagF0qUx8</string>
+          <int>5</int>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
           <string>tqawork</string>
-          <string>DEPLOYMENT_JDBC_JCR_PASSWORD</string>
-          <string>Txuiu3IdagF0qUx8</string>
           <string>DEPLOYMENT_JDBC_JCR_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_jcr</string>
           <string>DEPLOYMENT_JDBC_JCR_USERNAME</string>
           <string>tqawork</string>
-          <string>EXO_PASSWORD</string>
-          <string>UJHU595SyGivqMU7</string>
           <string>EXO_USERNAME</string>
           <string>tqa</string>
         </tree-map>
