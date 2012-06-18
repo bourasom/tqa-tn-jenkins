@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl>
   <helpRedirect/>
-  <hudsonUrl>http://tqa-mon01.exoplatform.lan:8080/</hudsonUrl>
+  <hudsonUrl>http://tqa-jenkins.exoplatform.lan/</hudsonUrl>
   <adminAddress>address not configured yet &lt;nobody@nowhere&gt;</adminAddress>
   <useSsl>false</useSsl>
   <charset>UTF-8</charset>
