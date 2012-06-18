@@ -80,6 +80,7 @@
     <gitConfigName></gitConfigName>
     <gitConfigEmail></gitConfigEmail>
     <skipTag>false</skipTag>
+    <includedRegions></includedRegions>
     <scmName></scmName>
   </scm>
   <assignedNode>tqa-inj</assignedNode>
