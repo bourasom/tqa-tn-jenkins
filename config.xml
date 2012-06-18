@@ -194,7 +194,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>benchmark-plf-process-start2</string>
+        <string>benchmark-plf-process-start</string>
         <string>benchmark-plf-task-stop-jmxtrans</string>
       </jobNames>
       <jobFilters/>
