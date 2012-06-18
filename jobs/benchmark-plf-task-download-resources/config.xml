@@ -110,37 +110,6 @@
       <command>$WORKSPACE/bin/downloadResources.sh $VERSION $DATASET</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers>
-    <join.JoinTrigger>
-      <joinProjects></joinProjects>
-      <joinPublishers>
-        <hudson.plugins.parameterizedtrigger.BuildTrigger>
-          <configs>
-            <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-              <configs>
-                <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
-              </configs>
-              <projects>benchmark-plf-task-start-appserver, </projects>
-              <condition>SUCCESS</condition>
-              <triggerWithNoParameters>false</triggerWithNoParameters>
-            </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-          </configs>
-        </hudson.plugins.parameterizedtrigger.BuildTrigger>
-      </joinPublishers>
-      <evenIfDownstreamUnstable>false</evenIfDownstreamUnstable>
-    </join.JoinTrigger>
-    <hudson.plugins.parameterizedtrigger.BuildTrigger>
-      <configs>
-        <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-          <configs>
-            <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
-          </configs>
-          <projects>benchmark-plf-task-prepare-appserver,benchmark-plf-task-prepare-data,benchmark-plf-task-prepare-database, </projects>
-          <condition>SUCCESS</condition>
-          <triggerWithNoParameters>false</triggerWithNoParameters>
-        </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-      </configs>
-    </hudson.plugins.parameterizedtrigger.BuildTrigger>
-  </publishers>
+  <publishers/>
   <buildWrappers/>
 </project>
