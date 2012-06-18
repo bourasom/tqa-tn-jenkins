@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>The version of Platform to use for the bench (it can be a release or a SNAPSHOT)</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>DATASET</name>
+          <description>The dataset to use for the bench</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>ds1</string>
+              <string>ds2</string>
+              <string>ds3</string>
+              <string>200users</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VU</name>
+          <description></description>
+          <defaultValue>30</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DURATION</name>
+          <description></description>
+          <defaultValue>3600</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>RAMPUP</name>
+          <description></description>
+          <defaultValue>10</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>USERS</name>
+          <description></description>
+          <defaultValue>99</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>SCRIPT</name>
+          <description>JMX Script for JMeter</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>PLF_PERF_01_AllScenarios-3.0.x-simplified.jmx</string>
+              <string>PLF_PERF_02_Social-3.0.x-simplified.jmx</string>
+              <string>PLF_PERF_03_EcmsBasicRun.jmx</string>
+              <string>PLF_PERF_03_ECMS-Public-3.5.x.jmx</string>
+              <string>PLF_PERF_03_ECMS-Public.jmx</string>
+              <string>PLF_PERF_04_SocialRead-3.0.x.jmx</string>
+              <string>PLF_PERF_04_SocialRead-3.5.x.jmx</string>
+              <string>PLF_PERF_04_SocialRead_modified-3.5.x.jmx</string>
+              <string>PLF_PERF_05_Login-3.5.x.jmx</string>
+              <string>PLF_PERF_05_Login.jmx</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>TYPE</name>
+          <description>JTL -&gt; CSV : Plugin Type Classe</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>AggregateReport</string>
+              <string>ThreadsStateOverTime</string>
+              <string>BytesThroughputOverTime</string>
+              <string>HitsPerSecond</string>
+              <string>LatenciesOverTime</string>
+              <string>PerfMon</string>
+              <string>ResponseCodesPerSecond</string>
+              <string>ResponseTimesDistribution</string>
+              <string>ResponseTimesOverTime</string>
+              <string>ResponseTimesPercentiles</string>
+              <string>ThroughputOverTime</string>
+              <string>ThroughputVsThreads</string>
+              <string>TimesVsThreads</string>
+              <string>TransactionsPerSecond</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>GRANULATION</name>
+          <description>JTL -&gt; CSV : granulation time for samples &lt;ms&gt;</description>
+          <defaultValue>10000</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>AGGREGATE</name>
+          <description>JTL -&gt; CSV : aggregate all rows into one</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>no</string>
+              <string>yes</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>true</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders/>
+  <publishers>
+    <hudson.plugins.parameterizedtrigger.BuildTrigger>
+      <configs>
+        <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
+          <configs>
+            <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
+          </configs>
+          <projects>benchmark-plf-task-download-resources, </projects>
+          <condition>SUCCESS</condition>
+          <triggerWithNoParameters>false</triggerWithNoParameters>
+        </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
+      </configs>
+    </hudson.plugins.parameterizedtrigger.BuildTrigger>
+  </publishers>
+  <buildWrappers/>
+</project>
