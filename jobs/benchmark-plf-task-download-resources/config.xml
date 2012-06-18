@@ -120,5 +120,7 @@
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
-  <buildWrappers/>
+  <buildWrappers>
+    <org.jenkinsci.plugins.envinject.EnvInjectListener_-JobSetupEnvironmentWrapper/>
+  </buildWrappers>
 </project>
