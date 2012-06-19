@@ -18,6 +18,8 @@
     <permission>hudson.model.Computer.Disconnect:fdrouet</permission>
     <permission>hudson.model.Hudson.Administer:aheritier</permission>
     <permission>hudson.model.Hudson.Administer:fdrouet</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:aheritier</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:fdrouet</permission>
     <permission>hudson.model.Hudson.Read:aheritier</permission>
     <permission>hudson.model.Hudson.Read:anonymous</permission>
     <permission>hudson.model.Hudson.Read:atleti</permission>
@@ -25,16 +27,22 @@
     <permission>hudson.model.Hudson.Read:obouras</permission>
     <permission>hudson.model.Hudson.RunScripts:aheritier</permission>
     <permission>hudson.model.Hudson.RunScripts:fdrouet</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:aheritier</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:fdrouet</permission>
     <permission>hudson.model.Item.Build:aheritier</permission>
     <permission>hudson.model.Item.Build:atleti</permission>
     <permission>hudson.model.Item.Build:fdrouet</permission>
     <permission>hudson.model.Item.Build:obouras</permission>
+    <permission>hudson.model.Item.Cancel:aheritier</permission>
+    <permission>hudson.model.Item.Cancel:fdrouet</permission>
     <permission>hudson.model.Item.Configure:aheritier</permission>
     <permission>hudson.model.Item.Configure:fdrouet</permission>
     <permission>hudson.model.Item.Create:aheritier</permission>
     <permission>hudson.model.Item.Create:fdrouet</permission>
     <permission>hudson.model.Item.Delete:aheritier</permission>
     <permission>hudson.model.Item.Delete:fdrouet</permission>
+    <permission>hudson.model.Item.Discover:aheritier</permission>
+    <permission>hudson.model.Item.Discover:fdrouet</permission>
     <permission>hudson.model.Item.Read:aheritier</permission>
     <permission>hudson.model.Item.Read:anonymous</permission>
     <permission>hudson.model.Item.Read:atleti</permission>
@@ -55,6 +63,8 @@
     <permission>hudson.model.View.Create:fdrouet</permission>
     <permission>hudson.model.View.Delete:aheritier</permission>
     <permission>hudson.model.View.Delete:fdrouet</permission>
+    <permission>hudson.model.View.Read:aheritier</permission>
+    <permission>hudson.model.View.Read:fdrouet</permission>
     <permission>hudson.scm.SCM.Tag:aheritier</permission>
     <permission>hudson.scm.SCM.Tag:fdrouet</permission>
   </authorizationStrategy>
