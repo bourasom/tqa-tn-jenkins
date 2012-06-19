@@ -237,18 +237,6 @@
       <topPortlets/>
       <bottomPortlets/>
     </hudson.plugins.view.dashboard.Dashboard>
-    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
-      <owner class="hudson" reference="../../.."/>
-      <name>PIPELINE</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <selectedJob>benchmark-plf-process-start.old</selectedJob>
-      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
-      <buildViewTitle></buildViewTitle>
-      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
-      <displayProgressBar>false</displayProgressBar>
-    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <primaryView>TQA Dashboard</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
