@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
   <disabledAdministrativeMonitors/>
-  <version>1.470</version>
+  <version>1.471</version>
   <numExecutors>1</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
@@ -76,15 +76,15 @@
     <slave>
       <name>tqa-as01</name>
       <description></description>
-      <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
+      <remoteFS>/mnt/data/jenkins-agent/as01/</remoteFS>
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
-        <host>tqa-as01.exoplatform.lan</host>
+        <host>localhost</host>
         <port>22</port>
         <username>tqawork</username>
-        <password>diZDZmzbWv79Z6UtjR+cKw==</password>
+        <password>QRPIMnazxKzkUjQoywlVOw==</password>
         <privatekey>/var/lib/jenkins/.ssh/id_rsa</privatekey>
       </launcher>
       <label>tqa-as01 tqa-as</label>
@@ -93,15 +93,15 @@
     <slave>
       <name>tqa-as02</name>
       <description></description>
-      <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
+      <remoteFS>/mnt/data/jenkins-agent/as02/</remoteFS>
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
-        <host>tqa-as02.exoplatform.lan</host>
+        <host>localhost</host>
         <port>22</port>
         <username>tqawork</username>
-        <password>diZDZmzbWv79Z6UtjR+cKw==</password>
+        <password>DqnG/XAhkQGK0RiATaXkBF5R+BfYoAlehfXPwHLfvn9lXhEPzEsVsRfFHBIxMUYZ</password>
         <privatekey>/var/lib/jenkins/.ssh/id_rsa</privatekey>
       </launcher>
       <label>tqa-as02 tqa-as</label>
@@ -110,15 +110,15 @@
     <slave>
       <name>tqa-as03</name>
       <description></description>
-      <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
+      <remoteFS>/mnt/data/jenkins-agent/as03/</remoteFS>
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
-        <host>tqa-as03.exoplatform.lan</host>
+        <host>localhost</host>
         <port>22</port>
         <username>tqawork</username>
-        <password>diZDZmzbWv79Z6UtjR+cKw==</password>
+        <password>DqnG/XAhkQGK0RiATaXkBF5R+BfYoAlehfXPwHLfvn9lXhEPzEsVsRfFHBIxMUYZ</password>
         <privatekey>/var/lib/jenkins/.ssh/id_rsa</privatekey>
       </launcher>
       <label>tqa-as03 tqa-as</label>
@@ -127,15 +127,15 @@
     <slave>
       <name>tqa-inj01</name>
       <description></description>
-      <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
+      <remoteFS>/mnt/data/jenkins-agent/inj01/</remoteFS>
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
-        <host>tqa-inj01.exoplatform.lan</host>
+        <host>localhost</host>
         <port>22</port>
         <username>tqawork</username>
-        <password>diZDZmzbWv79Z6UtjR+cKw==</password>
+        <password>DqnG/XAhkQGK0RiATaXkBF5R+BfYoAlehfXPwHLfvn9lXhEPzEsVsRfFHBIxMUYZ</password>
         <privatekey>/var/lib/jenkins/.ssh/id_rsa</privatekey>
       </launcher>
       <label>tqa-inj01 tqa-inj</label>
@@ -144,15 +144,15 @@
     <slave>
       <name>tqa-data01</name>
       <description></description>
-      <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
+      <remoteFS>/mnt/data/jenkins-agent/data01/</remoteFS>
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
-        <host>tqa-data01.exoplatform.lan</host>
+        <host>localhost</host>
         <port>22</port>
         <username>tqawork</username>
-        <password>diZDZmzbWv79Z6UtjR+cKw==</password>
+        <password>DqnG/XAhkQGK0RiATaXkBF5R+BfYoAlehfXPwHLfvn9lXhEPzEsVsRfFHBIxMUYZ</password>
         <privatekey>/var/lib/jenkins/.ssh/id_rsa</privatekey>
       </launcher>
       <label>tqa-data01 tqa-data</label>
@@ -161,15 +161,15 @@
     <slave>
       <name>tqa-db01</name>
       <description></description>
-      <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
+      <remoteFS>/mnt/data/jenkins-agent/db01/</remoteFS>
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
-        <host>tqa-db01.exoplatform.lan</host>
+        <host>localhost</host>
         <port>22</port>
         <username>tqawork</username>
-        <password>diZDZmzbWv79Z6UtjR+cKw==</password>
+        <password>DqnG/XAhkQGK0RiATaXkBF5R+BfYoAlehfXPwHLfvn9lXhEPzEsVsRfFHBIxMUYZ</password>
         <privatekey>/var/lib/jenkins/.ssh/id_rsa</privatekey>
       </launcher>
       <label>tqa-db01 tqa-db</label>
@@ -205,7 +205,6 @@
         <hudson.views.LastSuccessColumn/>
         <hudson.views.LastFailureColumn/>
         <hudson.views.LastDurationColumn/>
-        <hudson.plugins.projectstats.column.NumBuildsColumn/>
         <hudson.views.BuildButtonColumn/>
       </columns>
       <includeRegex>.*</includeRegex>
