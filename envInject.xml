@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.envinject.EnvInjectNodeProperty_-EnvInjectNodePropertyDescriptor>
+  <helpRedirect/>
+  <envInjectGlobalPasswordEntries>
+    <org.jenkinsci.plugins.envinject.EnvInjectGlobalPasswordEntry>
+      <name>DEPLOYMENT_JDBC_IDM_PASSWORD</name>
+      <value>4WEBnW9oTlxNRhPnAnnUDHYmQ2Zs21r+/WelLY0fnCs=</value>
+    </org.jenkinsci.plugins.envinject.EnvInjectGlobalPasswordEntry>
+    <org.jenkinsci.plugins.envinject.EnvInjectGlobalPasswordEntry>
+      <name>DEPLOYMENT_JDBC_JCR_PASSWORD</name>
+      <value>4WEBnW9oTlxNRhPnAnnUDHYmQ2Zs21r+/WelLY0fnCs=</value>
+    </org.jenkinsci.plugins.envinject.EnvInjectGlobalPasswordEntry>
+    <org.jenkinsci.plugins.envinject.EnvInjectGlobalPasswordEntry>
+      <name>EXO_PASSWORD</name>
+      <value>T3kEBSnSF6fx1qoiC8p7nHYmQ2Zs21r+/WelLY0fnCs=</value>
+    </org.jenkinsci.plugins.envinject.EnvInjectGlobalPasswordEntry>
+  </envInjectGlobalPasswordEntries>
+</org.jenkinsci.plugins.envinject.EnvInjectNodeProperty_-EnvInjectNodePropertyDescriptor>
