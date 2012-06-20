@@ -280,7 +280,7 @@
           <string>JMETER_VERSION</string>
           <string>2.7</string>
           <string>TARGET_GRAPHITE_HOST</string>
-          <string>tqa-graphite.exoplatform.org</string>
+          <string>tqa-graphite.exoplatform.lan</string>
           <string>TARGET_JMX_HOST</string>
           <string>tqa-as01.exoplatform.lan</string>
           <string>TOOLS_DIR</string>
