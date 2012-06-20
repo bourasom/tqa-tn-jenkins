@@ -56,10 +56,5 @@
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
-  <buildWrappers>
-    <EnvInjectPasswordWrapper>
-      <injectGlobalPasswords>true</injectGlobalPasswords>
-      <passwordEntries/>
-    </EnvInjectPasswordWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
