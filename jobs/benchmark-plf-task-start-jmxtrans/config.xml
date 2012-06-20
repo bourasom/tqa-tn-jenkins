@@ -57,10 +57,5 @@ BUILD_ID=dontKillMe nohup /mnt/app/tools/jmxtrans/jmxtrans.sh start</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
-  <buildWrappers>
-    <EnvInjectPasswordWrapper>
-      <injectGlobalPasswords>true</injectGlobalPasswords>
-      <passwordEntries/>
-    </EnvInjectPasswordWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
