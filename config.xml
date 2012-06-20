@@ -260,7 +260,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>12</int>
+          <int>10</int>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
@@ -269,10 +269,6 @@
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_jcr</string>
           <string>DEPLOYMENT_JDBC_JCR_USERNAME</string>
           <string>tqawork</string>
-          <string>DEPLOYMENT_JVM_MAXPERMSIZE</string>
-          <string>64m</string>
-          <string>DEPLOYMENT_JVM_XMS</string>
-          <string>256m</string>
           <string>EXO_USERNAME</string>
           <string>tqa</string>
           <string>JMETER_HOME</string>
