@@ -260,7 +260,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>10</int>
+          <int>11</int>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
@@ -277,6 +277,8 @@
           <string>2.7</string>
           <string>TARGET_GRAPHITE_HOST</string>
           <string>tqa-graphite.exoplatform.lan</string>
+          <string>TARGET_HOST</string>
+          <string>tqa-as01.exoplatform.lan</string>
           <string>TARGET_JMX_HOST</string>
           <string>tqa-as01.exoplatform.lan</string>
           <string>TOOLS_DIR</string>
