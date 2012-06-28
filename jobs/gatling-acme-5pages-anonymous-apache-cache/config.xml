@@ -1,15 +1,49 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
+  <description></description>
+  <logRotator>
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>30</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>USERS</name>
+          <description>The total number of users for the benchmark</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>RAMP</name>
+          <description>The amount of time in SECONDS for the Rampup of the total number of users</description>
+          <defaultValue>1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DURATION</name>
+          <description>The duration of the benchmark in MINUTES</description>
+          <defaultValue>5</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
-  <canRoam>true</canRoam>
+  <assignedNode>tqa-inj</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>JAVA_OPTS=&quot;-Dusers=${USERS} -Dramp=${RAMP} -Dduration=${DURATION} -Dhost=tqa-ap01.exoplatform.lan -Dport=80&quot; /mnt/app/gatling/1.2.3/bin/gatling.sh -rf /mnt/data/results/3.5.3/capacity/gatling/acme_5_pages/ -sf /mnt/app/gatling/1.2.3/user-files/simulations/capacity_planning/acme/ -s capacity_planning.acme.Simulation5Pages -rn acme_5Pages_anon_${USERS}vu_apache-nocache
+</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
