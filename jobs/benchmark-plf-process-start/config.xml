@@ -139,6 +139,12 @@
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-plf-task-prepare-scenario</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
       </phaseJobs>
       <continuationCondition>SUCCESSFUL</continuationCondition>
     </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
