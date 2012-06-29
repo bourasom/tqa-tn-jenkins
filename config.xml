@@ -207,6 +207,7 @@
         <string>benchmark-plf-process-start</string>
         <string>benchmark-plf-task-download-dataset</string>
         <string>benchmark-plf-task-download-jdbc-driver</string>
+        <string>benchmark-plf-task-download-scenario</string>
         <string>benchmark-plf-task-stop-jmxtrans</string>
         <string>gatling-acme-5pages-anonymous-apache-cache</string>
         <string>gatling-acme-5pages-anonymous-apache-nocache</string>
