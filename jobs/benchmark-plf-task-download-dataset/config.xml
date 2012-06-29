@@ -62,7 +62,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>$WORKSPACE/downloadResources.sh</command>
+      <command>$WORKSPACE/downloadDataset.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
