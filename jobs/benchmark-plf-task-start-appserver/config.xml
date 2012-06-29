@@ -62,7 +62,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>BUILD_ID=dontKillMe ${WORKSPACE}/bin/startAppServer.sh $VERSION</command>
+      <command>BUILD_ID=dontKillMe ${WORKSPACE}/startAppServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
