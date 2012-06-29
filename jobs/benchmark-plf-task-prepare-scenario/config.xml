@@ -1,15 +1,120 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
+  <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
-  <scm class="hudson.scm.NullSCM"/>
-  <canRoam>true</canRoam>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>The version of Platform to use for the bench (it can be a release or a SNAPSHOT)</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DATASET</name>
+          <description>The dataset to use for the bench</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VU</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DURATION</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>RAMPUP</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>USERS</name>
+          <description></description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SCRIPT</name>
+          <description>JMX Script for JMeter</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TYPE</name>
+          <description>JTL -&gt; CSV : Plugin Type Classe</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>GRANULATION</name>
+          <description>JTL -&gt; CSV : granulation time for samples &lt;ms&gt;</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>AGGREGATE</name>
+          <description>JTL -&gt; CSV : aggregate all rows into one &lt;yes/no&gt;</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name></name>
+        <refspec></refspec>
+        <url>git@github.com:exoplatform/benchmark-scripts.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>origin/production</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <disableSubmodules>false</disableSubmodules>
+    <recursiveSubmodules>false</recursiveSubmodules>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <authorOrCommitter>false</authorOrCommitter>
+    <clean>false</clean>
+    <wipeOutWorkspace>false</wipeOutWorkspace>
+    <pruneBranches>false</pruneBranches>
+    <remotePoll>false</remotePoll>
+    <ignoreNotifyCommit>false</ignoreNotifyCommit>
+    <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+    <gitTool>Default</gitTool>
+    <browser class="hudson.plugins.git.browser.GithubWeb">
+      <url>https://github.com/exoplatform/benchmark-scripts/</url>
+    </browser>
+    <submoduleCfg class="list"/>
+    <relativeTargetDir></relativeTargetDir>
+    <reference></reference>
+    <excludedRegions></excludedRegions>
+    <excludedUsers></excludedUsers>
+    <gitConfigName></gitConfigName>
+    <gitConfigEmail></gitConfigEmail>
+    <skipTag>false</skipTag>
+    <includedRegions></includedRegions>
+    <scmName></scmName>
+  </scm>
+  <assignedNode>tqa-as01</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
-  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenDownstreamBuilding>true</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>${WORKSPACE}/bin/prepareAppServer.sh $VERSION $DATASET</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
-  <buildWrappers/>
+  <buildWrappers>
+    <EnvInjectPasswordWrapper>
+      <injectGlobalPasswords>true</injectGlobalPasswords>
+      <passwordEntries/>
+    </EnvInjectPasswordWrapper>
+  </buildWrappers>
 </project>
