@@ -52,7 +52,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>BUILD_ID=dontKillMe nohup ${WORKSPACE}/jmxtrans.sh start</command>
+      <command>BUILD_ID=dontKillMe 
+${WORKSPACE}/jmxtrans.sh stop || true
+nohup ${WORKSPACE}/jmxtrans.sh start</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
