@@ -92,7 +92,7 @@
       <phaseName>downloads</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-plf-task-download-resources</jobName>
+          <jobName>benchmark-plf-task-download-product</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
