@@ -62,7 +62,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/bin/prepareAppServer.sh $VERSION $DATASET</command>
+      <command>${WORKSPACE}/bin/prepareScenario.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
