@@ -262,7 +262,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>11</int>
+          <int>12</int>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
@@ -273,6 +273,8 @@
           <string>tqawork</string>
           <string>EXO_USERNAME</string>
           <string>tqa</string>
+          <string>JAVA_HOME</string>
+          <string>/usr/lib/jvm/jdk-sun-6u30-b12-i586/jre</string>
           <string>JMETER_HOME</string>
           <string>${TOOLS_DIR}/jmeter/${JMETER_VERSION}</string>
           <string>JMETER_VERSION</string>
