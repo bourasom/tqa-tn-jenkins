@@ -52,7 +52,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/bin/extractResults.sh ${VERSION} ${DATASET} ${DURATION} ${SCRIPT} ${TYPE} ${GRANULATION} ${AGGREGATE}</command>
+      <command>${WORKSPACE}/extractResults.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
