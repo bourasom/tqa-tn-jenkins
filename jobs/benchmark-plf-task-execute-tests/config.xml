@@ -92,7 +92,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/bin/executeTests.sh $VERSION $DATASET $VU $DURATION $RAMPUP $USERS $SCRIPT</command>
+      <command>${WORKSPACE}/executeTests.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
