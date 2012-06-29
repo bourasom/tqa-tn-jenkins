@@ -7,7 +7,7 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
-          <name>VERSION</name>
+          <name>PRODUCT_VERSION</name>
           <description>The version of Platform to use for the bench (it can be a release or a SNAPSHOT)</description>
           <defaultValue></defaultValue>
         </hudson.model.StringParameterDefinition>
@@ -16,13 +16,47 @@
           <description>The dataset to use for the bench</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>ds1</string>
-              <string>ds2</string>
-              <string>ds3</string>
-              <string>200users</string>
+              <string>DATASET-PLF-3.0.x-Login-Logout-v01</string>
+              <string>DATASET-PLF-3.0.x-Social-v01</string>
+              <string>DATASET-PLF-3.0.x-Social-v02</string>
+              <string>DATASET-PLF-3.0.x-Social-v03</string>
+              <string>DATASET-PLF-3.5.x-Login-Logout-v01</string>
+              <string>DATASET-PLF-3.5.x-Social-v01</string>
+              <string>DATASET-PLF-3.5.x-Social-v02</string>
+              <string>DATASET-PLF-3.5.x-Social-v03</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>SCENARIO</name>
+          <description>SCENARIO to execute</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>SCENARIO-PLF-3.0.x-AllScenarios-simplified-v01</string>
+              <string>SCENARIO-PLF-3.0.x-ECMS-Social-v01</string>
+              <string>SCENARIO-PLF-3.0.x-Login-Logout-v01</string>
+              <string>SCENARIO-PLF-3.0.x-Social-simplified-v01</string>
+              <string>SCENARIO-PLF-3.0.x-Social-v01</string>
+              <string>SCENARIO-PLF-3.5.2-qa-website-ECMS-benchs-v01</string>
+              <string>SCENARIO-PLF-3.5.x-ECMS-Public-v01</string>
+              <string>SCENARIO-PLF-3.5.x-Login-fullrq-v01</string>
+              <string>SCENARIO-PLF-3.5.x-Login-Logout-v01</string>
+              <string>SCENARIO-PLF-3.5.x-Social-fullrq-v01</string>
+              <string>SCENARIO-PLF-3.5.x-Social-v01</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.TextParameterDefinition>
+          <name>TARGET_URL</name>
+          <description>The (v)host on which the test must be executed
+(Should be renamed TARGET HOST)</description>
+          <defaultValue>tqa-as01.exoplatform.org</defaultValue>
+        </hudson.model.TextParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TARGET_PORT</name>
+          <description>The port on which the test must be executed</description>
+          <defaultValue>8080</defaultValue>
+        </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VU</name>
           <description></description>
@@ -43,61 +77,6 @@
           <description></description>
           <defaultValue>99</defaultValue>
         </hudson.model.StringParameterDefinition>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>SCRIPT</name>
-          <description>JMX Script for JMeter</description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>PLF_PERF_01_AllScenarios-3.0.x-simplified.jmx</string>
-              <string>PLF_PERF_02_Social-3.0.x-simplified.jmx</string>
-              <string>PLF_PERF_03_EcmsBasicRun.jmx</string>
-              <string>PLF_PERF_03_ECMS-Public-3.5.x.jmx</string>
-              <string>PLF_PERF_03_ECMS-Public.jmx</string>
-              <string>PLF_PERF_04_SocialRead-3.0.x.jmx</string>
-              <string>PLF_PERF_04_SocialRead-3.5.x.jmx</string>
-              <string>PLF_PERF_04_SocialRead_modified-3.5.x.jmx</string>
-              <string>PLF_PERF_05_Login-3.5.x.jmx</string>
-              <string>PLF_PERF_05_Login.jmx</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>TYPE</name>
-          <description>JTL -&gt; CSV : Plugin Type Classe</description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>AggregateReport</string>
-              <string>ThreadsStateOverTime</string>
-              <string>BytesThroughputOverTime</string>
-              <string>HitsPerSecond</string>
-              <string>LatenciesOverTime</string>
-              <string>PerfMon</string>
-              <string>ResponseCodesPerSecond</string>
-              <string>ResponseTimesDistribution</string>
-              <string>ResponseTimesOverTime</string>
-              <string>ResponseTimesPercentiles</string>
-              <string>ThroughputOverTime</string>
-              <string>ThroughputVsThreads</string>
-              <string>TimesVsThreads</string>
-              <string>TransactionsPerSecond</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>GRANULATION</name>
-          <description>JTL -&gt; CSV : granulation time for samples &lt;ms&gt;</description>
-          <defaultValue>10000</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.ChoiceParameterDefinition>
-          <name>AGGREGATE</name>
-          <description>JTL -&gt; CSV : aggregate all rows into one</description>
-          <choices class="java.util.Arrays$ArrayList">
-            <a class="string-array">
-              <string>no</string>
-              <string>yes</string>
-            </a>
-          </choices>
-        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
