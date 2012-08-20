@@ -59,7 +59,7 @@ ${WORKSPACE}/scripts/stopJBossServer.sh</command>
   </builders>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>jboss/server/default/log/server.log</artifacts>
+      <artifacts>jboss/server/default/log/server.log,results/stopJBossServer.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
   </publishers>
