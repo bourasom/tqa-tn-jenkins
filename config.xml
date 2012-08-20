@@ -316,6 +316,7 @@
         <hudson.views.BuildButtonColumn/>
         <hudson.plugins.projectstats.column.NumBuildsColumn/>
       </columns>
+      <includeRegex>benchmark-plf.*</includeRegex>
       <useCssStyle>false</useCssStyle>
       <includeStdJobList>false</includeStdJobList>
       <leftPortletWidth>50%</leftPortletWidth>
