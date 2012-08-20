@@ -59,7 +59,7 @@ BUILD_ID=dontKillMe ${WORKSPACE}/scripts/startJBossServer.sh</command>
   </builders>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>jboss/bin/run.conf,jboss/server/default/conf/gatein/configuration.properties</artifacts>
+      <artifacts>jboss/bin/run.conf,jboss/server/default/conf/gatein/configuration.properties,results/startJBossServer.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
   </publishers>
