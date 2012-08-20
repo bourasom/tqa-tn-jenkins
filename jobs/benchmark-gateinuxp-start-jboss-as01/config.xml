@@ -53,6 +53,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
+ln -fs /mnt/data/results ${WORKSPACE}/results
 BUILD_ID=dontKillMe ${WORKSPACE}/scripts/startJBossServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
