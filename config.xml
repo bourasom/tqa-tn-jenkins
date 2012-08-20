@@ -275,6 +275,7 @@
         <hudson.views.BuildButtonColumn/>
         <hudson.plugins.projectstats.column.NumBuildsColumn/>
       </columns>
+      <includeRegex>benchmark-gateinuxp.*</includeRegex>
       <useCssStyle>false</useCssStyle>
       <includeStdJobList>false</includeStdJobList>
       <leftPortletWidth>50%</leftPortletWidth>
