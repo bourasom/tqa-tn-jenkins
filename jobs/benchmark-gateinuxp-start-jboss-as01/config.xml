@@ -56,6 +56,11 @@
 ${WORKSPACE}/scripts/startJBoss.sh</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>jboss/bin/run.conf,jboss/server/default/conf/gatein/configuration.properties</artifacts>
+      <latestOnly>false</latestOnly>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
   <buildWrappers/>
 </project>
