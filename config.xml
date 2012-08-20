@@ -298,7 +298,7 @@
     </hudson.plugins.view.dashboard.Dashboard>
     <com.tikal.jenkins.plugins.multijob.views.MultiJobView>
       <owner class="hudson" reference="../../.."/>
-      <name>test</name>
+      <name>PLF TC</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
