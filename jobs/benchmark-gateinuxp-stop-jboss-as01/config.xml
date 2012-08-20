@@ -53,7 +53,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
-${WORKSPACE}/scripts/stopJBoss.sh</command>
+${WORKSPACE}/scripts/stopJBossServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
