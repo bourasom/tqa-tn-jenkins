@@ -296,47 +296,6 @@
       <topPortlets/>
       <bottomPortlets/>
     </hudson.plugins.view.dashboard.Dashboard>
-    <hudson.plugins.view.dashboard.Dashboard>
-      <owner class="hudson" reference="../../.."/>
-      <name>PLF TC</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <jobNames class="tree-set">
-        <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.view.dashboard.Dashboard[2]/jobNames/comparator"/>
-      </jobNames>
-      <jobFilters/>
-      <columns>
-        <hudson.views.StatusColumn/>
-        <hudson.views.WeatherColumn/>
-        <hudson.views.JobColumn/>
-        <hudson.views.LastSuccessColumn/>
-        <hudson.views.LastFailureColumn/>
-        <hudson.views.LastDurationColumn/>
-        <hudson.views.BuildButtonColumn/>
-        <hudson.plugins.projectstats.column.NumBuildsColumn/>
-      </columns>
-      <includeRegex>benchmark-plf.*</includeRegex>
-      <useCssStyle>false</useCssStyle>
-      <includeStdJobList>false</includeStdJobList>
-      <leftPortletWidth>50%</leftPortletWidth>
-      <rightPortletWidth>50%</rightPortletWidth>
-      <leftPortlets>
-        <hudson.plugins.view.dashboard.core.HudsonStdJobsPortlet>
-          <id>dashboard_portlet_3</id>
-          <name>Jenkins jobs list</name>
-        </hudson.plugins.view.dashboard.core.HudsonStdJobsPortlet>
-      </leftPortlets>
-      <rightPortlets>
-        <hudson.plugins.view.dashboard.builds.LatestBuilds>
-          <id>dashboard_portlet_4</id>
-          <name>Latest builds</name>
-          <numBuilds>10</numBuilds>
-        </hudson.plugins.view.dashboard.builds.LatestBuilds>
-      </rightPortlets>
-      <topPortlets/>
-      <bottomPortlets/>
-    </hudson.plugins.view.dashboard.Dashboard>
     <com.tikal.jenkins.plugins.multijob.views.MultiJobView>
       <owner class="hudson" reference="../../.."/>
       <name>test</name>
