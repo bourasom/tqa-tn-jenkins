@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
   <disabledAdministrativeMonitors/>
-  <version>1.471</version>
+  <version>1.478</version>
   <numExecutors>1</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
@@ -321,7 +321,7 @@
       </columns>
     </com.tikal.jenkins.plugins.multijob.views.MultiJobView>
   </views>
-  <primaryView>TQA Dashboard</primaryView>
+  <primaryView>Gatein UXP</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
   <label></label>
   <nodeProperties/>
@@ -331,7 +331,7 @@
         <unserializable-parents/>
         <tree-map>
           <default>
-            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../../views/hudson.plugins.view.dashboard.Dashboard[2]/jobNames/comparator"/>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
           <int>13</int>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
