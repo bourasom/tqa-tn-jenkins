@@ -52,7 +52,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/home/tqawork/startJBoss.sh</command>
+      <command>ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
+${WORKSPACE}/scripts/startJBoss.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
