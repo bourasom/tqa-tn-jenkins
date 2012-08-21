@@ -52,7 +52,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
+      <command>rm -f ${WORKSPACE}/jboss
+ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
+rm -f ${WORKSPACE}/results
 ln -fs /mnt/data/results ${WORKSPACE}/results
 BUILD_ID=dontKillMe ${WORKSPACE}/scripts/startJBossServer.sh</command>
     </hudson.tasks.Shell>
