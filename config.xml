@@ -43,6 +43,10 @@
     <permission>hudson.model.Item.Delete:fdrouet</permission>
     <permission>hudson.model.Item.Discover:aheritier</permission>
     <permission>hudson.model.Item.Discover:fdrouet</permission>
+    <permission>hudson.model.Item.ExtendedRead:aheritier</permission>
+    <permission>hudson.model.Item.ExtendedRead:atleti</permission>
+    <permission>hudson.model.Item.ExtendedRead:fdrouet</permission>
+    <permission>hudson.model.Item.ExtendedRead:obouras</permission>
     <permission>hudson.model.Item.Read:aheritier</permission>
     <permission>hudson.model.Item.Read:anonymous</permission>
     <permission>hudson.model.Item.Read:atleti</permission>
