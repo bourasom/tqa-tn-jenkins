@@ -27,7 +27,16 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>mkdir -p /mnt/data/datasets/${DATASET_LOCAL_DIR_NAME}/data
+mkdir -p /mnt/data/datasets/${DATASET_LOCAL_DIR_NAME}/sql-dump
+mkdir -p /mnt/data/datasets/${DATASET_LOCAL_DIR_NAME}/ldap
+rsync --progress -av jenkinsa@qaf01.exoplatform.org:${DATASET_ROOT_DIR_ON_QAF01}/data/*.rar /mnt/data/datasets/${DATASET_LOCAL_DIR_NAME}/data/
+rsync --progress -av jenkinsa@qaf01.exoplatform.org:${DATASET_ROOT_DIR_ON_QAF01}/sql-dump/*.rar /mnt/data/datasets/${DATASET_LOCAL_DIR_NAME}/sql-dump/
+rsync --progress -av jenkinsa@qaf01.exoplatform.org:${DATASET_ROOT_DIR_ON_QAF01}/ldap/*.gz /mnt/data/datasets/${DATASET_LOCAL_DIR_NAME}/ldap/</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
