@@ -49,7 +49,7 @@ find /mnt/data/results/3.5.3/capacity/ -type f -name simulation.log -exec gzip {
   </builders>
   <publishers>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
-      <recipientList>exo-qaf-notifications@exoplatform.com</recipientList>
+      <recipientList>$DEFAULT_RECIPIENTS</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
