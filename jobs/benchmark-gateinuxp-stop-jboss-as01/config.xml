@@ -63,7 +63,7 @@ ${WORKSPACE}/scripts/stopJBossServer.sh</command>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
-      <recipientList></recipientList>
+      <recipientList>exo-qaf-notifications@exoplatform.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
