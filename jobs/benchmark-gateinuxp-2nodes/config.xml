@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.tikal.jenkins.plugins.multijob.MultiJobProject>
+  <actions/>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.scm.NullSCM"/>
@@ -9,7 +11,60 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
-  <publishers/>
+  <builders>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+      <phaseName>Start Application servers</phaseName>
+      <phaseJobs>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-start-jboss-as01</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+      </phaseJobs>
+      <continuationCondition>SUCCESSFUL</continuationCondition>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+      <phaseName>Start JMXTrans</phaseName>
+      <phaseJobs>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-start-jmxtrans-as01</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+      </phaseJobs>
+      <continuationCondition>SUCCESSFUL</continuationCondition>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+      <phaseName>Stop Servers and JMXTrans</phaseName>
+      <phaseJobs>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-stop-jboss-as01</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-stop-jmxtrans-as01</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+      </phaseJobs>
+      <continuationCondition>SUCCESSFUL</continuationCondition>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+  </builders>
+  <publishers>
+    <hudson.plugins.emailext.ExtendedEmailPublisher>
+      <recipientList>$DEFAULT_RECIPIENTS</recipientList>
+      <configuredTriggers/>
+      <contentType>default</contentType>
+      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript></presendScript>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
   <buildWrappers/>
 </com.tikal.jenkins.plugins.multijob.MultiJobProject>
