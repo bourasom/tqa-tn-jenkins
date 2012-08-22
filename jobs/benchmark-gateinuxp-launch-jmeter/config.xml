@@ -92,7 +92,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/executeTests.sh</command>
+      <command>${WORKSPACE}/scripts/launchJMeter.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
