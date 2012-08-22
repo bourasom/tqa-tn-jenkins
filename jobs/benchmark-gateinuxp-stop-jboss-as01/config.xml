@@ -62,11 +62,6 @@ ${WORKSPACE}/scripts/stopJBossServer.sh</command>
       <artifacts>jboss/server/default/log/server.log,results/stopJBossServer.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
-    <hudson.tasks.Mailer>
-      <recipients>exo-qaf-notifications@exoplatform.com</recipients>
-      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
   </publishers>
   <buildWrappers/>
 </project>
