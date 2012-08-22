@@ -53,8 +53,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>BUILD_ID=dontKillMe 
-${WORKSPACE}/jmxtrans.sh stop || true
-nohup ${WORKSPACE}/jmxtrans.sh start</command>
+${WORKSPACE}/jmxtrans/jmxtrans.sh stop || true
+nohup ${WORKSPACE}/jmxtrans/jmxtrans.sh start</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
