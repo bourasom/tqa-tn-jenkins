@@ -341,6 +341,9 @@
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
+      <selectedJob>benchmark-gateinuxp-1node</selectedJob>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
       <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
       <alwaysAllowManualTrigger>true</alwaysAllowManualTrigger>
       <showPipelineParameters>true</showPipelineParameters>
