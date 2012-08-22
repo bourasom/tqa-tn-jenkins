@@ -201,6 +201,5 @@ echo &quot;======&quot;
       <injectGlobalPasswords>true</injectGlobalPasswords>
       <passwordEntries/>
     </EnvInjectPasswordWrapper>
-    <org.jenkinsci.plugins.envinject.EnvInjectListener_-JobSetupEnvironmentWrapper/>
   </buildWrappers>
 </project>
