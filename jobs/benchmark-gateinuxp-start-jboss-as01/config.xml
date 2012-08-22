@@ -64,6 +64,24 @@ BUILD_ID=dontKillMe ${WORKSPACE}/scripts/startJBossServer.sh</command>
       <artifacts>jboss/server/default/deploy/jbossweb.sar/server.xml,jboss/server/default/conf/gatein/jcr/jbosscache/local/cache-config.xml,jboss/server/default/conf/gatein/jcr/jbosscache/cluster/cache-config.xml,jboss/server/default/deploy/gatein-ds.xml,jboss/server/default/conf/gatein/configuration.properties,jboss/bin/run.conf,results/startJBossServer.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
+    <hudson.plugins.emailext.ExtendedEmailPublisher>
+      <recipientList></recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+          <email>
+            <recipientList></recipientList>
+            <subject></subject>
+            <body></body>
+            <sendToDevelopers>true</sendToDevelopers>
+            <sendToRequester>false</sendToRequester>
+            <includeCulprits>false</includeCulprits>
+            <sendToRecipientList>true</sendToRecipientList>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+      </configuredTriggers>
+      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>
 </project>
