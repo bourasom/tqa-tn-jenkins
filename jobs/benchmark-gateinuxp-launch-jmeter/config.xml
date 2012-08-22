@@ -129,7 +129,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/scripts/launchJMeter.sh</command>
+      <command>#${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
