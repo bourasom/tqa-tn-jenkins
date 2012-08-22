@@ -261,6 +261,7 @@
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>benchmark-gateinuxp-1node</string>
+        <string>benchmark-gateinuxp-2nodes</string>
         <string>benchmark-gateinuxp-start-jboss-as02</string>
         <string>benchmark-gateinuxp-start-jboss-as03</string>
         <string>benchmark-gateinuxp-start-jmxtrans-as02</string>
