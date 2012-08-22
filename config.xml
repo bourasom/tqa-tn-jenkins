@@ -335,22 +335,6 @@
         <hudson.views.BuildButtonColumn/>
       </columns>
     </com.tikal.jenkins.plugins.multijob.views.MultiJobView>
-    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
-      <owner class="hudson" reference="../../.."/>
-      <name>pipeline</name>
-      <filterExecutors>false</filterExecutors>
-      <filterQueue>false</filterQueue>
-      <properties class="hudson.model.View$PropertyList"/>
-      <selectedJob>benchmark-gateinuxp-1node</selectedJob>
-      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
-      <buildViewTitle></buildViewTitle>
-      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
-      <alwaysAllowManualTrigger>true</alwaysAllowManualTrigger>
-      <showPipelineParameters>true</showPipelineParameters>
-      <refreshFrequency>3</refreshFrequency>
-      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
-      <displayProgressBar>false</displayProgressBar>
-    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <primaryView>Gatein UXP</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
