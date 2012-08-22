@@ -266,6 +266,7 @@
         <string>benchmark-gateinuxp-start-jmxtrans-as03</string>
         <string>benchmark-gateinuxp-stop-jboss-as02</string>
         <string>benchmark-gateinuxp-stop-jboss-as03</string>
+        <string>benchmark-gateinuxp-stop-jmxtrans-as02</string>
         <string>benchmark-gateinuxp-stop-jmxtrans-as03</string>
       </jobNames>
       <jobFilters/>
