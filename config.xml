@@ -260,9 +260,6 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>benchmark-gateinuxp-start-jmxtrans-as01</string>
-        <string>benchmark-gateinuxp-stop-jmxtrans-as01</string>
-        <string>download-dataset-from-qaf01</string>
       </jobNames>
       <jobFilters/>
       <columns>
