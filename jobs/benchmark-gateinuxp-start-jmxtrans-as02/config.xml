@@ -91,5 +91,7 @@ nohup ${WORKSPACE}/jmxtrans/jmxtrans.sh start</command>
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <org.jenkinsci.plugins.envinject.EnvInjectListener_-JobSetupEnvironmentWrapper/>
+  </buildWrappers>
 </project>
