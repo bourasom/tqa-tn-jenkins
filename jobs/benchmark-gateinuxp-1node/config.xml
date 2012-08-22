@@ -58,21 +58,12 @@
   <publishers>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
       <recipientList>$DEFAULT_RECIPIENTS</recipientList>
-      <configuredTriggers>
-        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
-          <email>
-            <recipientList></recipientList>
-            <subject></subject>
-            <body></body>
-            <sendToDevelopers>true</sendToDevelopers>
-            <sendToRequester>false</sendToRequester>
-            <includeCulprits>false</includeCulprits>
-            <sendToRecipientList>true</sendToRecipientList>
-          </email>
-        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
-      </configuredTriggers>
+      <configuredTriggers/>
+      <contentType>default</contentType>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
       <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>
