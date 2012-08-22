@@ -65,13 +65,7 @@
       <command>$WORKSPACE/downloadDataset.sh</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers>
-    <hudson.tasks.Mailer>
-      <recipients>exo-qaf-notifications@exoplatform.com</recipients>
-      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
-  </publishers>
+  <publishers/>
   <buildWrappers>
     <EnvInjectPasswordWrapper>
       <injectGlobalPasswords>true</injectGlobalPasswords>
