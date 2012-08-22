@@ -65,7 +65,26 @@
       <command>BUILD_ID=dontKillMe ${WORKSPACE}/stopAppServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.plugins.emailext.ExtendedEmailPublisher>
+      <recipientList></recipientList>
+      <configuredTriggers>
+        <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+          <email>
+            <recipientList></recipientList>
+            <subject></subject>
+            <body></body>
+            <sendToDevelopers>true</sendToDevelopers>
+            <sendToRequester>false</sendToRequester>
+            <includeCulprits>false</includeCulprits>
+            <sendToRecipientList>true</sendToRecipientList>
+          </email>
+        </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
+      </configuredTriggers>
+      <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
+      <defaultContent>$DEFAULT_CONTENT</defaultContent>
+    </hudson.plugins.emailext.ExtendedEmailPublisher>
+  </publishers>
   <buildWrappers>
     <EnvInjectPasswordWrapper>
       <injectGlobalPasswords>true</injectGlobalPasswords>
