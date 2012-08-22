@@ -65,6 +65,7 @@ BUILD_ID=dontKillMe ${WORKSPACE}/scripts/startJBossServer.sh</command>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
     <hudson.tasks.Mailer>
+      <recipients>exo-qaf-notifications@exoplatform.com</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>false</sendToIndividuals>
     </hudson.tasks.Mailer>
