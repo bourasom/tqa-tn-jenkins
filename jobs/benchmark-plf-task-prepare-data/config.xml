@@ -65,12 +65,7 @@
       <command>${WORKSPACE}/prepareData.sh</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers>
-    <hudson.tasks.Mailer>
-      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
-  </publishers>
+  <publishers/>
   <buildWrappers>
     <EnvInjectPasswordWrapper>
       <injectGlobalPasswords>true</injectGlobalPasswords>
