@@ -37,12 +37,6 @@ rsync --partial -av jenkinsa@qaf01.exoplatform.org:${DATASET_ROOT_DIR_ON_QAF01}/
 rsync --partial -av jenkinsa@qaf01.exoplatform.org:${DATASET_ROOT_DIR_ON_QAF01}/ldap/*.gz /mnt/data/datasets/${DATASET_LOCAL_DIR_NAME}/ldap/</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers>
-    <hudson.tasks.Mailer>
-      <recipients>exo-qaf-notifications@exoplatform.com</recipients>
-      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
-  </publishers>
+  <publishers/>
   <buildWrappers/>
 </project>
