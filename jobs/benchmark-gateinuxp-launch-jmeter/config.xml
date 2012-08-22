@@ -6,11 +6,36 @@
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
-        <hudson.model.StringParameterDefinition>
-          <name>SCENARIO</name>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>SCENARIO_FILE</name>
           <description>The scenario to execute</description>
-          <defaultValue></defaultValue>
-        </hudson.model.StringParameterDefinition>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>PERF_PLF_INTRANET_00_LOGIN.jmx</string>
+              <string>PERF_PLF_INTRANET_01_DISCUSSION_WRITE.jmx</string>
+              <string>PERF_PLF_INTRANET_01_PROFILE_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_02_DISCUSSION_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_02_WIKI_UPDATE_WRITE.jmx</string>
+              <string>PERF_PLF_INTRANET_03_DOCUMENT_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_04_SPACE_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_05_WIKI_READ.jmx</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>CSV_FILE</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NONE</string>
+              <string>PERF_PLF_INTRANET_DBINT1_02_DISCUSSION_TopicsLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT1_04_SPACE_READ_SpaceLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT1_05_WIKI_READ_WikiLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT1_Users.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_Users.csv</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VU</name>
           <description></description>
@@ -43,6 +68,17 @@
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
+    <EnvInjectJobProperty>
+      <info>
+        <propertiesContent>SCENARIO_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${SCENARIO_FILE}
+CSV_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${CSV_FILE}</propertiesContent>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+      <on>true</on>
+      <keepJenkinsSystemVariables>true</keepJenkinsSystemVariables>
+      <keepBuildVariables>true</keepBuildVariables>
+      <contributors/>
+    </EnvInjectJobProperty>
   </properties>
   <scm class="org.jenkinsci.plugins.multiplescms.MultiSCM">
     <scms>
