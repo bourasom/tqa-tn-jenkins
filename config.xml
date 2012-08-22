@@ -260,6 +260,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>benchmark-gateinuxp-start-jboss-as02</string>
       </jobNames>
       <jobFilters/>
       <columns>
