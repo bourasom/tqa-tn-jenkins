@@ -409,7 +409,7 @@
           <string>JMETER_HOME</string>
           <string>${TOOLS_DIR}/jmeter/${JMETER_VERSION}</string>
           <string>JMETER_PLUGINS_VERSION</string>
-          <string>0.5.1</string>
+          <string>0.4.2</string>
           <string>JMETER_VERSION</string>
           <string>2.5.1</string>
           <string>TARGET_GRAPHITE_HOST</string>
