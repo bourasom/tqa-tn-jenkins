@@ -139,24 +139,6 @@
       <nodeProperties/>
     </slave>
     <slave>
-      <temporaryOfflineCause class="hudson.slaves.OfflineCause$ChannelTermination">
-        <cause class="java.io.IOException">
-          <detailMessage>Unexpected termination of the channel</detailMessage>
-          <cause class="java.io.EOFException">
-            <stackTrace>
-              <trace>java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:2553)</trace>
-              <trace>java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1296)</trace>
-              <trace>java.io.ObjectInputStream.readObject(ObjectInputStream.java:350)</trace>
-              <trace>hudson.remoting.Command.readFrom(Command.java:90)</trace>
-              <trace>hudson.remoting.ClassicCommandTransport.read(ClassicCommandTransport.java:59)</trace>
-              <trace>hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:48)</trace>
-            </stackTrace>
-          </cause>
-          <stackTrace>
-            <trace>hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:50)</trace>
-          </stackTrace>
-        </cause>
-      </temporaryOfflineCause>
       <name>tqa-inj01</name>
       <description></description>
       <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
