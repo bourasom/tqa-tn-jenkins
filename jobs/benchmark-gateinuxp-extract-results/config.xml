@@ -58,10 +58,6 @@ ${WORKSPACE}/extractResults.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.ArtifactArchiver>
-      <artifacts>results/**/*.png,results/**/*.csv</artifacts>
-      <latestOnly>false</latestOnly>
-    </hudson.tasks.ArtifactArchiver>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
       <recipientList>$DEFAULT_RECIPIENTS</recipientList>
       <configuredTriggers>
@@ -83,6 +79,10 @@ ${WORKSPACE}/extractResults.sh</command>
       <attachmentsPattern></attachmentsPattern>
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>results/latest/*.png</artifacts>
+      <latestOnly>false</latestOnly>
+    </hudson.tasks.ArtifactArchiver>
   </publishers>
   <buildWrappers>
     <EnvInjectPasswordWrapper>
