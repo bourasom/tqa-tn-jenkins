@@ -91,6 +91,7 @@ ${WORKSPACE}/extractResults.sh</command>
     </EnvInjectPasswordWrapper>
     <org.jenkinsci.plugins.xvfb.XvfbBuildWrapper>
       <installationName>default</installationName>
+      <displayName>8</displayName>
       <screen>1024x768x24</screen>
       <debug>false</debug>
       <timeout>0</timeout>
