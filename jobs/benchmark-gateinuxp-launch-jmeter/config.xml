@@ -23,8 +23,8 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
-          <name>CSV_FILE</name>
-          <description></description>
+          <name>USERS_FILE</name>
+          <description>The set of users to use</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
               <string>NONE</string>
@@ -37,35 +37,70 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
-          <name>VU</name>
-          <description></description>
-          <defaultValue>30</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>DURATION</name>
-          <description></description>
-          <defaultValue>3600</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>RAMPUP</name>
-          <description></description>
-          <defaultValue>10</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>USERS</name>
-          <description></description>
-          <defaultValue>99</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>TARGET_URL</name>
+          <name>HOST</name>
           <description>The host on which the test is launched</description>
           <defaultValue>tqa-as01.exoplatform.org</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
-          <name>TARGET_PORT</name>
+          <name>PORT</name>
           <description>The port on which the test is launched</description>
           <defaultValue>8080</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>THREAD_COUNT</name>
+          <description>-JexpThreadCount</description>
+          <defaultValue>10</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DURATION</name>
+          <description>-JexpDuration</description>
+          <defaultValue>100</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_MAX_THREAD_DURATION</name>
+          <description>-JexpVUGMaxThreadDuration</description>
+          <defaultValue>180</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_MAX_THREAD</name>
+          <description>-JexpVUGMaxThread</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_WAIT_TIME</name>
+          <description>-JexpVUGWaitTime</description>
+          <defaultValue>15</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_UP_STEP</name>
+          <description>-JexpVUGUpStep</description>
+          <defaultValue>100</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_UP_DURATION</name>
+          <description>-JexpVUGUpDuration</description>
+          <defaultValue>180</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_UP_RAMPUP</name>
+          <description>-JexpVUGUpRampup</description>
+          <defaultValue>30</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_DOWN_STEP</name>
+          <description>-JexpVUGDownStep</description>
+          <defaultValue>100</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_DOWN_DURATION</name>
+          <description>-JexpVUGDownDuration</description>
+          <defaultValue>15</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>GROUPING_REQUESTS_BY_USERS_LEVEL</name>
+          <description>-JexpGroupingRequestsByUsersLevel</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
