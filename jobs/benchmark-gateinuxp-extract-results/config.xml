@@ -51,7 +51,13 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>rm -f ${WORKSPACE}/results
+ln -fs /mnt/data/results ${WORKSPACE}/results
+${WORKSPACE}/falcon/bin/jtl2falcon.sh ${WORKSPACE}/results/bench.jtl</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
