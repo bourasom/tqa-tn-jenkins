@@ -43,8 +43,7 @@
       <command>JAVA_OPTS=&quot;-Dusers=${USERS} -Dramp=${RAMP} -Dduration=${DURATION} -Dhost=tqa-ap01.exoplatform.lan -Dport=80&quot; /mnt/app/gatling/1.2.3/bin/gatling.sh -rf /mnt/data/results/3.5.3/capacity/gatling/acme_5_pages/ -sf /mnt/app/gatling/1.2.3/user-files/simulations/capacity_planning/acme/ -s capacity_planning.acme.Simulation5Pages -rn acme_5Pages_anon_${USERS}vu_apache-nocache
 
 # Compression of gatling benchmark record file which use a lot of space on disk
-find /mnt/data/results/3.5.3/capacity/ -type f -name simulation.log -exec gzip {} \;
-</command>
+find /mnt/data/results/3.5.3/capacity/ -type f -name simulation.log -exec gzip {} \;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
