@@ -81,7 +81,7 @@ ${WORKSPACE}/extractResults.sh</command>
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>results/latest/*</artifacts>
+      <artifacts>results/latest/*.png,results/latest/*.csv,results/latest/*.jtl,results/latest/*.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
   </publishers>
