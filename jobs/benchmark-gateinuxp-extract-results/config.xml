@@ -52,7 +52,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/extractResults.sh</command>
+      <command>rm -f ${WORKSPACE}/results
+ln -fs /mnt/data/results ${WORKSPACE}/results
+${WORKSPACE}/extractResults.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
