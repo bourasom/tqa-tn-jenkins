@@ -389,9 +389,9 @@
         <unserializable-parents/>
         <tree-map>
           <default>
-            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+            <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../../views/hudson.plugins.view.dashboard.Dashboard[3]/jobNames/comparator"/>
           </default>
-          <int>12</int>
+          <int>13</int>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
@@ -408,8 +408,10 @@
           <string>/mnt/app/PLF/3.5.4/3.5.4-Jboss-LOT1</string>
           <string>JMETER_HOME</string>
           <string>${TOOLS_DIR}/jmeter/${JMETER_VERSION}</string>
+          <string>JMETER_PLUGINS_VERSION</string>
+          <string>0.4.2</string>
           <string>JMETER_VERSION</string>
-          <string>2.7</string>
+          <string>2.5.1</string>
           <string>TARGET_GRAPHITE_HOST</string>
           <string>tqa-graphite.exoplatform.lan</string>
           <string>TARGET_HOST</string>
