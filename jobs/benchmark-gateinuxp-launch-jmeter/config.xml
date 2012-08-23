@@ -191,17 +191,15 @@
     <EnvInjectBuilder>
       <info>
         <propertiesContent>SCENARIO_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${SCENARIO_FILE}
-CSV_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${CSV_FILE}</propertiesContent>
+USERS_FILE_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${USERS_FILE}</propertiesContent>
       </info>
     </EnvInjectBuilder>
     <hudson.tasks.Shell>
-      <command>#${WORKSPACE}/benchmark-scripts/launchJMeter.sh
-echo &quot;======&quot;
+      <command>echo &quot;======&quot;
 echo &quot;SCENARIO_PATH=$SCENARIO_PATH&quot;
-echo &quot;CSV_PATH=$CSV_PATH&quot;
+echo &quot;USERS_FILE_PATH=$USERS_FILE_PATH&quot;
 echo &quot;======&quot;
-###########warmup ~JexpVUGMaxThread=0 /mnt/app/jmeter/2.5.1/bin/jmeter.sh -JexpThreadCount=10 -JexpDuration=100 -JexpHost=tqa-as01.exoplatform.lan -JexpVUGMaxThreadDuration=180  -JexpPort=8080 -JexpVUGMaxThread=0 -JexpVUGWaitTime=15 -JexpVUGUpStep=100 -JexpVUGUpDuration=180 -JexpVUGUpRampup=30 -JexpVUGDownStep=100 -JexpVUGDownDuration=15 -JexpGroupingRequestsByUsersLevel=true -JexpCsvDatasetFolder=/mnt/data/scenarios/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2 -JexpUserDatasetName=PERF_PLF_INTRANET_DBINT1_Users.csv  -n -l /mnt/data/results/3.5.4/INT_LOT1_BENCHS/PERF_PLF_INTRANET_01_PROFILE_READ_1000vu_16go_300000nodes_1050httpconn_v2.jtl -t /mnt/data/scenarios/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/PERF_PLF_INTRANET_01_PROFILE_READ.jmx
-###########bench~expThreadCount=0 /mnt/app/jmeter/2.5.1/bin/jmeter.sh -JexpThreadCount=0 -JexpDuration=0 -JexpHost=tqa-as01.exoplatform.lan -JexpVUGMaxThreadDuration=180  -JexpPort=8080 -JexpVUGMaxThread=1000 -JexpVUGWaitTime=15 -JexpVUGUpStep=100 -JexpVUGUpDuration=180 -JexpVUGUpRampup=30 -JexpVUGDownStep=100 -JexpVUGDownDuration=15 -JexpGroupingRequestsByUsersLevel=true -JexpCsvDatasetFolder=/mnt/data/scenarios/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2 -JexpUserDatasetName=PERF_PLF_INTRANET_DBINT1_Users.csv  -n -l /mnt/data/results/3.5.4/INT_LOT1_BENCHS/PERF_PLF_INTRANET_01_PROFILE_READ_1000vu_16go_300000nodes_1050httpconn_v2.jtl -t /mnt/data/scenarios/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/PERF_PLF_INTRANET_01_PROFILE_READ.jmx</command>
+${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
