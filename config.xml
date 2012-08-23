@@ -263,7 +263,6 @@
         <string>benchmark-gateinuxp-1node</string>
         <string>benchmark-gateinuxp-2nodes</string>
         <string>benchmark-gateinuxp-3nodes</string>
-        <string>benchmark-gateinuxp-extract-results</string>
         <string>benchmark-gateinuxp-launch-jmeter</string>
         <string>benchmark-gateinuxp-start-jboss-as02</string>
         <string>benchmark-gateinuxp-start-jboss-as03</string>
