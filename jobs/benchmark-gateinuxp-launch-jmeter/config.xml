@@ -195,11 +195,7 @@ USERS_FILE_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmete
       </info>
     </EnvInjectBuilder>
     <hudson.tasks.Shell>
-      <command>echo &quot;======&quot;
-echo &quot;SCENARIO_PATH=$SCENARIO_PATH&quot;
-echo &quot;USERS_FILE_PATH=$USERS_FILE_PATH&quot;
-echo &quot;======&quot;
-${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
+      <command>${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
