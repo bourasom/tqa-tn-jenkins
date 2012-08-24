@@ -119,7 +119,10 @@
       <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
-      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Demand">
+        <inDemandDelay>0</inDemandDelay>
+        <idleDelay>2</idleDelay>
+      </retentionStrategy>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
         <host>tqa-as01.exoplatform.lan</host>
         <port>22</port>
