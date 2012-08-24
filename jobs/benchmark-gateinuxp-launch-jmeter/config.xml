@@ -195,7 +195,8 @@ USERS_FILE_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmete
       </info>
     </EnvInjectBuilder>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
+      <command>echo &quot;GROUPING_REQUESTS_BY_USERS_LEVEL=$GROUPING_REQUESTS_BY_USERS_LEVEL&quot;
+${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
