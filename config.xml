@@ -209,7 +209,7 @@
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Demand">
         <inDemandDelay>0</inDemandDelay>
-        <idleDelay>2</idleDelay>
+        <idleDelay>5</idleDelay>
       </retentionStrategy>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
         <host>tqa-db01.exoplatform.lan</host>
