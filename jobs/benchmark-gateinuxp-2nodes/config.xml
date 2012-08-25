@@ -80,6 +80,11 @@
           <description>-JexpPageResponseTimeout</description>
           <defaultValue>30000</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_MAX_THREAD</name>
+          <description>-JexpVUGMaxThread for tests execution</description>
+          <defaultValue>1000</defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
