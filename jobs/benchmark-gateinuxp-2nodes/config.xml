@@ -184,7 +184,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
       <continuationCondition>SUCCESSFUL</continuationCondition>
     </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
     <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
-      <phaseName>Stop Servers and JMXTrans</phaseName>
+      <phaseName>Stop and Report</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-stop-jboss-as02</jobName>
@@ -206,6 +206,12 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-stop-jmxtrans-as03</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-extract-results</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
