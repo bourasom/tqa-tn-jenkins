@@ -153,7 +153,13 @@
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-launch-jmeter</jobName>
-          <jobProperties>THINK_TIME=20000
+          <jobProperties>SCENARIO_FILE=${SCENARIO_FILE}
+USER_DATASET_NAME=${USER_DATASET_NAME}
+SPACE_DATASET_NAME=${SPACE_DATASET_NAME}
+TOPIC_DATASET_NAME=${TOPIC_DATASET_NAME}
+WIKI_DATASET_NAME=${WIKI_DATASET_NAME}
+PAGE_RESPONSE_TIME=${PAGE_RESPONSE_TIME}
+THINK_TIME=20000
 THREAD_COUNT=10
 LOOP_COUNT=10000000
 RAMPUP=10
@@ -178,7 +184,14 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-launch-jmeter</jobName>
-          <jobProperties>THINK_TIME=20000
+          <jobProperties>SCENARIO_FILE=${SCENARIO_FILE}
+USER_DATASET_NAME=${USER_DATASET_NAME}
+SPACE_DATASET_NAME=${SPACE_DATASET_NAME}
+TOPIC_DATASET_NAME=${TOPIC_DATASET_NAME}
+WIKI_DATASET_NAME=${WIKI_DATASET_NAME}
+PAGE_RESPONSE_TIME=${PAGE_RESPONSE_TIME}
+VUG_MAX_THREAD=${VUG_MAX_THREAD}
+THINK_TIME=20000
 THREAD_COUNT=0
 LOOP_COUNT= 10000000
 RAMPUP=10
