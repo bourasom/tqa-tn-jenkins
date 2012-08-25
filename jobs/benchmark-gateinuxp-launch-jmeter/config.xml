@@ -242,7 +242,7 @@ CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jm
       </info>
     </EnvInjectBuilder>
     <hudson.tasks.Shell>
-      <command>/bin/bash -xv ${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
+      <command>${WORKSPACE}/benchmark-scripts/launchJMeter.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
