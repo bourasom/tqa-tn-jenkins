@@ -128,6 +128,26 @@
           <description>-JexpGroupingRequestsByUsersLevel</description>
           <defaultValue>true</defaultValue>
         </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>LOOP_COUNT</name>
+          <description>-JexpLoopCount</description>
+          <defaultValue>10000000</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>RAMPUP</name>
+          <description>-JexpRampup</description>
+          <defaultValue>10</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PAGE_RESPONSE_TIME</name>
+          <description>-JexpPageResponseTimeout</description>
+          <defaultValue>30000</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>THINK_TIME</name>
+          <description>-JexpThinkTime</description>
+          <defaultValue>20000</defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
