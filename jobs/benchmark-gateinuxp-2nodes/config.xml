@@ -138,15 +138,7 @@
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-launch-jmeter</jobName>
-          <jobProperties>SCENARIO_FILE=PERF_PLF_INTRANET_01_PROFILE_READ.jmx
-USER_DATASET_NAME=PERF_PLF_INTRANET_DBINT1_Users.csv
-SPACE_DATASET_NAME=NONE
-TOPIC_DATASET_NAME=NONE
-WIKI_DATASET_NAME=NONE
-HOST=tqa-ap.exoplatform.lan	
-PORT	=80
-PAGE_RESPONSE_TIME=30000
-THINK_TIME=20000
+          <jobProperties>THINK_TIME=20000
 THREAD_COUNT=10
 LOOP_COUNT=10000000
 RAMPUP=10
@@ -171,15 +163,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-launch-jmeter</jobName>
-          <jobProperties>SCENARIO_FILE=PERF_PLF_INTRANET_01_PROFILE_READ.jmx
-USER_DATASET_NAME=PERF_PLF_INTRANET_DBINT1_Users.csv
-SPACE_DATASET_NAME=NONE
-TOPIC_DATASET_NAME=NONE
-WIKI_DATASET_NAME=NONE
-HOST=tqa-ap.exoplatform.lan	
-PORT	=80
-PAGE_RESPONSE_TIME=30000
-THINK_TIME=20000
+          <jobProperties>THINK_TIME=20000
 THREAD_COUNT=0
 LOOP_COUNT= 10000000
 RAMPUP=10
