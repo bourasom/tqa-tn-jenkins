@@ -3,7 +3,86 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>SCENARIO_FILE</name>
+          <description>The scenario to execute</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>PERF_PLF_INTRANET_00_LOGIN.jmx</string>
+              <string>PERF_PLF_INTRANET_01_DISCUSSION_WRITE.jmx</string>
+              <string>PERF_PLF_INTRANET_01_PROFILE_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_02_DISCUSSION_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_02_WIKI_UPDATE_WRITE.jmx</string>
+              <string>PERF_PLF_INTRANET_03_DOCUMENT_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_04_SPACE_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_05_WIKI_READ.jmx</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>USER_DATASET_NAME</name>
+          <description>The set of users to use</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NONE</string>
+              <string>PERF_PLF_INTRANET_DBINT1_Users.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_Users.csv</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>SPACE_DATASET_NAME</name>
+          <description>The set of spaces to use</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NONE</string>
+              <string>PERF_PLF_INTRANET_DBINT1_04_SPACE_READ_SpaceLinks.csv</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>TOPIC_DATASET_NAME</name>
+          <description>The set ok wiki pages to use</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NONE</string>
+              <string>PERF_PLF_INTRANET_DBINT1_02_DISCUSSION_TopicsLinks.csv</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>HOST</name>
+          <description>The host on which the test is launched</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>tqa-ap.exoplatform.lan</string>
+              <string>tqa-as01.exoplatform.lan</string>
+              <string>tqa-as02.exoplatform.lan</string>
+              <string>tqa-as03.exoplatform.lan</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>PORT</name>
+          <description>The port on which the test is launched</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>80</string>
+              <string>8080</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PAGE_RESPONSE_TIME</name>
+          <description>-JexpPageResponseTimeout</description>
+          <defaultValue>30000</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
