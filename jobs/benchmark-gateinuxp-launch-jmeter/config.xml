@@ -66,12 +66,12 @@
         <hudson.model.StringParameterDefinition>
           <name>HOST</name>
           <description>The host on which the test is launched</description>
-          <defaultValue>tqa-as01.exoplatform.org</defaultValue>
+          <defaultValue>tqa-ap.exoplatform.org</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>PORT</name>
           <description>The port on which the test is launched</description>
-          <defaultValue>8080</defaultValue>
+          <defaultValue>80</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>THREAD_COUNT</name>
