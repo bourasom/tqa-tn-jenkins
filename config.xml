@@ -41,6 +41,7 @@
     <permission>hudson.model.Item.Cancel:fdrouet</permission>
     <permission>hudson.model.Item.Configure:aheritier</permission>
     <permission>hudson.model.Item.Configure:fdrouet</permission>
+    <permission>hudson.model.Item.Configure:obouras</permission>
     <permission>hudson.model.Item.Create:aheritier</permission>
     <permission>hudson.model.Item.Create:fdrouet</permission>
     <permission>hudson.model.Item.Delete:aheritier</permission>
