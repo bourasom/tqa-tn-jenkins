@@ -54,6 +54,16 @@
           </choices>
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
+          <name>WIKI_DATASET_NAME</name>
+          <description>The set ok wiki pages to use</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NONE</string>
+              <string>PERF_PLF_INTRANET_DBINT1_05_WIKI_READ_WikiLinks.csv</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
           <name>HOST</name>
           <description>The host on which the test is launched</description>
           <choices class="java.util.Arrays$ArrayList">
