@@ -406,7 +406,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>13</int>
+          <int>14</int>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
@@ -433,6 +433,8 @@
           <string>tqa-as01.exoplatform.lan</string>
           <string>TOOLS_DIR</string>
           <string>/mnt/app/tools</string>
+          <string>TQA_LAB</string>
+          <string>TN</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
