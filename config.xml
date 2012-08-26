@@ -420,7 +420,7 @@
           <string>JAVA_HOME</string>
           <string>/usr/lib/jvm/jdk-sun-6u30-b12-i586/jre</string>
           <string>JBOSS_HOME</string>
-          <string>/mnt/app/PLF/3.5.4/3.5.4-Jboss-LOT1</string>
+          <string>/mnt/app/PLF/current-jboss-jenkins</string>
           <string>JMETER_HOME</string>
           <string>${TOOLS_DIR}/jmeter/${JMETER_VERSION}</string>
           <string>JMETER_PLUGINS_VERSION</string>
