@@ -81,12 +81,12 @@
         <hudson.model.StringParameterDefinition>
           <name>DURATION</name>
           <description>-JexpDuration</description>
-          <defaultValue>100</defaultValue>
+          <defaultValue>600</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_MAX_THREAD_DURATION</name>
           <description>-JexpVUGMaxThreadDuration</description>
-          <defaultValue>180</defaultValue>
+          <defaultValue>0</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_MAX_THREAD</name>
@@ -96,37 +96,37 @@
         <hudson.model.StringParameterDefinition>
           <name>VUG_WAIT_TIME</name>
           <description>-JexpVUGWaitTime</description>
-          <defaultValue>15</defaultValue>
+          <defaultValue>0</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_UP_STEP</name>
           <description>-JexpVUGUpStep</description>
-          <defaultValue>100</defaultValue>
+          <defaultValue>0</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_UP_DURATION</name>
           <description>-JexpVUGUpDuration</description>
-          <defaultValue>180</defaultValue>
+          <defaultValue>0</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_UP_RAMPUP</name>
           <description>-JexpVUGUpRampup</description>
-          <defaultValue>30</defaultValue>
+          <defaultValue>0</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_DOWN_STEP</name>
           <description>-JexpVUGDownStep</description>
-          <defaultValue>100</defaultValue>
+          <defaultValue>0</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_DOWN_DURATION</name>
           <description>-JexpVUGDownDuration</description>
-          <defaultValue>15</defaultValue>
+          <defaultValue>0</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.BooleanParameterDefinition>
           <name>GROUPING_REQUESTS_BY_USERS_LEVEL</name>
           <description>-JexpGroupingRequestsByUsersLevel</description>
-          <defaultValue>true</defaultValue>
+          <defaultValue>false</defaultValue>
         </hudson.model.BooleanParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>LOOP_COUNT</name>
