@@ -69,6 +69,13 @@
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
               <string>tqa-ap.exoplatform.lan</string>
+              <string>tqa-ap01.exoplatform.lan</string>
+              <string>tqa-ap02.exoplatform.lan</string>
+              <string>tqa-ap03.exoplatform.lan</string>
+              <string>tqa-ac.exoplatform.lan</string>
+              <string>tqa-ac01.exoplatform.lan</string>
+              <string>tqa-ac02.exoplatform.lan</string>
+              <string>tqa-ac03.exoplatform.lan</string>
               <string>tqa-as01.exoplatform.lan</string>
               <string>tqa-as02.exoplatform.lan</string>
               <string>tqa-as03.exoplatform.lan</string>
