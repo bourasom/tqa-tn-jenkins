@@ -109,12 +109,11 @@
   <builders>
     <hudson.tasks.Shell>
       <command># We create a directory where we will put all results
-#_current_date=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
-#_current_results_path=&quot;/mnt/results/${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-2Nodes&quot;
-#mkdir -p ${_current_results_path}
-#rm -f /mnt/results/current
-#ln -fs ${_current_results_path} /mnt/results/current
-</command>
+_current_date=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
+_current_results_path=&quot;/mnt/data/results/${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-2Nodes&quot;
+mkdir -p ${_current_results_path}
+rm -f /mnt/date/results/current
+ln -fs ${_current_results_path} /mnt/data/results/current</command>
     </hudson.tasks.Shell>
     <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
       <phaseName>Start Primary Application server</phaseName>
