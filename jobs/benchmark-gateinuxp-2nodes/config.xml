@@ -201,7 +201,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
       <phaseName>Execute Tests</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-launch-jmeter</jobName>
+          <jobName>benchmark-gateinuxp-launch-jmeter-tests</jobName>
           <jobProperties>SCENARIO_FILE=${SCENARIO_FILE}
 USER_DATASET_NAME=${USER_DATASET_NAME}
 SPACE_DATASET_NAME=${SPACE_DATASET_NAME}
