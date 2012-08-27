@@ -168,7 +168,7 @@ ln -fs ${_current_results_path} /mnt/data/results/current</command>
       <phaseName>Warm UP Server</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-launch-jmeter</jobName>
+          <jobName>benchmark-gateinuxp-launch-jmeter-tests</jobName>
           <jobProperties>SCENARIO_FILE=${SCENARIO_FILE}
 USER_DATASET_NAME=${USER_DATASET_NAME}
 SPACE_DATASET_NAME=${SPACE_DATASET_NAME}
