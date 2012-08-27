@@ -24,7 +24,7 @@
               <transfers>
                 <jenkins.plugins.publish__over__ssh.BapSshTransfer>
                   <remoteDirectory>&apos;/home/qafhudson/archives/gateinuxp/&apos;yyyyMMdd-HHmmss</remoteDirectory>
-                  <sourceFiles>/mnt/data/results/current/**</sourceFiles>
+                  <sourceFiles>/mnt/data/results/current/**/*</sourceFiles>
                   <excludes></excludes>
                   <removePrefix>/mnt/data/results/current/</removePrefix>
                   <remoteDirectorySDF>false</remoteDirectorySDF>
