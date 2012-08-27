@@ -275,6 +275,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>benchmark-gateinuxp-1node</string>
         <string>benchmark-gateinuxp-2nodes</string>
         <string>benchmark-gateinuxp-extract-results</string>
         <string>benchmark-gateinuxp-launch-jmeter</string>
