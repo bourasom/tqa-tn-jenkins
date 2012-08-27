@@ -115,7 +115,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command># We create a directory where we will put all results
+      <command>rm -f ${WORKSPACE}/results
+ln -s /mnt/data/results ${WORKSPACE}/results
+# We create a directory where we will put all results
 _current_date=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
 _current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-2Nodes&quot;
 cd /mnt/data/results
