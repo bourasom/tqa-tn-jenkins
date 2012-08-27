@@ -66,17 +66,7 @@
         <hudson.model.StringParameterDefinition>
           <name>HOST</name>
           <description>The host on which the test is launched</description>
-          <defaultValue>tqa-ap.exoplatform.lan
-tqa-ap01.exoplatform.lan
-tqa-ap02.exoplatform.lan
-tqa-ap03.exoplatform.lan
-tqa-ac.exoplatform.lan
-tqa-ac01.exoplatform.lan
-tqa-ac02.exoplatform.lan
-tqa-ac03.exoplatform.lan
-tqa-as01.exoplatform.lan
-tqa-as02.exoplatform.lan
-tqa-as03.exoplatform.lan</defaultValue>
+          <defaultValue>tqa-ap.exoplatform.lantqa-ap01.exoplatform.lantqa-ap02.exoplatform.lantqa-ap03.exoplatform.lantqa-ac.exoplatform.lantqa-ac01.exoplatform.lantqa-ac02.exoplatform.lantqa-ac03.exoplatform.lantqa-as01.exoplatform.lantqa-as02.exoplatform.lantqa-as03.exoplatform.lan</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>PORT</name>
