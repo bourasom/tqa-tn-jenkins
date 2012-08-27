@@ -288,6 +288,7 @@
         <string>benchmark-gateinuxp-stop-jboss-as03</string>
         <string>benchmark-gateinuxp-stop-jmxtrans-as02</string>
         <string>benchmark-gateinuxp-stop-jmxtrans-as03</string>
+        <string>benchmark-gateinuxp-upload-to-qaf01</string>
       </jobNames>
       <jobFilters/>
       <columns>
