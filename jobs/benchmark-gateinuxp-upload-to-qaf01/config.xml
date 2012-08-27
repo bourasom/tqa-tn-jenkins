@@ -31,7 +31,7 @@ ln -s /mnt/data/results ${WORKSPACE}/results</command>
                   <sourceFiles>results/current/**/*</sourceFiles>
                   <excludes></excludes>
                   <removePrefix>results/current/</removePrefix>
-                  <remoteDirectorySDF>false</remoteDirectorySDF>
+                  <remoteDirectorySDF>true</remoteDirectorySDF>
                   <flatten>false</flatten>
                   <cleanRemote>false</cleanRemote>
                   <execCommand></execCommand>
