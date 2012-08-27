@@ -27,7 +27,7 @@ ln -s /mnt/data/results ${WORKSPACE}/results</command>
               <verbose>false</verbose>
               <transfers>
                 <jenkins.plugins.publish__over__ssh.BapSshTransfer>
-                  <remoteDirectory>&apos;/home/qafhudson/archives/gateinuxp/&apos;yyyyMMdd-HHmmss</remoteDirectory>
+                  <remoteDirectory>&apos;archives/gateinuxp/&apos;yyyyMMdd-HHmmss</remoteDirectory>
                   <sourceFiles>results/current/**/*</sourceFiles>
                   <excludes></excludes>
                   <removePrefix>results/current/</removePrefix>
