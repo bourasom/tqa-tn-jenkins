@@ -263,6 +263,37 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
       <attachmentsPattern></attachmentsPattern>
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
+    <jenkins.plugins.publish__over__ssh.BapSshPublisherPlugin>
+      <consolePrefix>SSH: </consolePrefix>
+      <delegate>
+        <publishers>
+          <jenkins.plugins.publish__over__ssh.BapSshPublisher>
+            <configName>qaf01.exoplatform.org</configName>
+            <verbose>false</verbose>
+            <transfers>
+              <jenkins.plugins.publish__over__ssh.BapSshTransfer>
+                <remoteDirectory>&apos;archives/gateinuxp/&apos;yyyyMMdd-HHmmss&apos;-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-1Node&apos;</remoteDirectory>
+                <sourceFiles>results/current/**/*</sourceFiles>
+                <excludes></excludes>
+                <removePrefix>results/current/</removePrefix>
+                <remoteDirectorySDF>true</remoteDirectorySDF>
+                <flatten>false</flatten>
+                <cleanRemote>false</cleanRemote>
+                <execCommand></execCommand>
+                <execTimeout>1800000</execTimeout>
+                <usePty>false</usePty>
+              </jenkins.plugins.publish__over__ssh.BapSshTransfer>
+            </transfers>
+            <useWorkspaceInPromotion>false</useWorkspaceInPromotion>
+            <usePromotionTimestamp>false</usePromotionTimestamp>
+          </jenkins.plugins.publish__over__ssh.BapSshPublisher>
+        </publishers>
+        <continueOnError>false</continueOnError>
+        <failOnError>false</failOnError>
+        <alwaysPublishFromMaster>false</alwaysPublishFromMaster>
+        <hostConfigurationAccess class="jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin" reference="../.."/>
+      </delegate>
+    </jenkins.plugins.publish__over__ssh.BapSshPublisherPlugin>
   </publishers>
   <buildWrappers/>
 </com.tikal.jenkins.plugins.multijob.MultiJobProject>
