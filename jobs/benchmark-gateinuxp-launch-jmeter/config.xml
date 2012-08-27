@@ -66,7 +66,17 @@
         <hudson.model.StringParameterDefinition>
           <name>HOST</name>
           <description>The host on which the test is launched</description>
-          <defaultValue>tqa-ap.exoplatform.org</defaultValue>
+          <defaultValue>tqa-ap.exoplatform.lan
+tqa-ap01.exoplatform.lan
+tqa-ap02.exoplatform.lan
+tqa-ap03.exoplatform.lan
+tqa-ac.exoplatform.lan
+tqa-ac01.exoplatform.lan
+tqa-ac02.exoplatform.lan
+tqa-ac03.exoplatform.lan
+tqa-as01.exoplatform.lan
+tqa-as02.exoplatform.lan
+tqa-as03.exoplatform.lan</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>PORT</name>
