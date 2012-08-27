@@ -118,10 +118,12 @@ move maxThreads from &quot;1050&quot;-&gt;&quot;2000&quot;</description>
     <hudson.tasks.Shell>
       <command># We create a directory where we will put all results
 _current_date=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
-_current_results_path=&quot;/mnt/data/results/${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-1Node&quot;
-mkdir -p ${_current_results_path}
-rm -f /mnt/date/results/current
-ln -fs ${_current_results_path} /mnt/data/results/current</command>
+_current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-1Node&quot;
+cd /mnt/data/results
+mkdir -p ./${_current_results_dir}
+rm -f ./current
+ln -fs ${_current_results_dir} current
+cd -</command>
     </hudson.tasks.Shell>
     <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
       <phaseName>Start Primary Application server</phaseName>
