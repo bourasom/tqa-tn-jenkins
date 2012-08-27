@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.tikal.jenkins.plugins.multijob.MultiJobProject>
   <actions/>
-  <description></description>
+  <description>Bench LOT2 Profile Read&#xd;
+move maxThreads from &quot;1050&quot;-&gt;&quot;2000&quot;</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
