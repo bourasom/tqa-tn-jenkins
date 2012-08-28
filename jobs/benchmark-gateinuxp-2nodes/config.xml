@@ -302,7 +302,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
             <verbose>false</verbose>
             <transfers>
               <jenkins.plugins.publish__over__ssh.BapSshTransfer>
-                <remoteDirectory>&apos;archives/gateinuxp/&apos;yyyyMMdd-HHmmss&apos;-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE}-${VUG_MAX_THREAD}VU-1Node&apos;</remoteDirectory>
+                <remoteDirectory>&apos;archives/gateinuxp/&apos;yyyyMMdd-HHmmss&apos;-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE}-${VUG_MAX_THREAD}VU-2Nodes&apos;</remoteDirectory>
                 <sourceFiles>results/current/**/*</sourceFiles>
                 <excludes></excludes>
                 <removePrefix>results/current/</removePrefix>
