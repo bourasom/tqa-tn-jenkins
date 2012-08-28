@@ -232,7 +232,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
       </phaseJobs>
-      <continuationCondition>SUCCESSFUL</continuationCondition>
+      <continuationCondition>COMPLETED</continuationCondition>
     </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
     <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
       <phaseName>Stop and Report</phaseName>
