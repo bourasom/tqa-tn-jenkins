@@ -119,7 +119,7 @@
 ln -s /mnt/data/results ${WORKSPACE}/results
 # We create a directory where we will put all results
 _current_date=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
-_current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-2Nodes&quot;
+_current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-3Nodes&quot;
 cd /mnt/data/results
 mkdir -p ./${_current_results_dir}
 rm -f ./current
@@ -142,6 +142,12 @@ cd -</command>
       <phaseName>Start others Application servers nodes</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-start-jboss-as01</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-start-jboss-as03</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
@@ -153,6 +159,12 @@ cd -</command>
     <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
       <phaseName>Start JMXTrans</phaseName>
       <phaseJobs>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-start-jmxtrans-as01</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-start-jmxtrans-as02</jobName>
           <jobProperties></jobProperties>
@@ -238,6 +250,12 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
       <phaseName>Stop and Report</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-stop-jboss-as01</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-stop-jboss-as02</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
@@ -245,6 +263,12 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-stop-jboss-as03</jobName>
+          <jobProperties></jobProperties>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>benchmark-gateinuxp-stop-jmxtrans-as01</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
