@@ -56,7 +56,7 @@
 ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
 rm -f ${WORKSPACE}/results
 ln -fs /mnt/data/results ${WORKSPACE}/results
-BUILD_ID=dontKillMe /bin/bash -xv ${WORKSPACE}/scripts/startJBossServer.sh</command>
+BUILD_ID=dontKillMe ${WORKSPACE}/scripts/startJBossServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
