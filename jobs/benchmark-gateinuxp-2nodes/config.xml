@@ -1,13 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.tikal.jenkins.plugins.multijob.MultiJobProject>
   <actions/>
-  <description>- set  replTimeout=&quot;60000&quot; to sync&#xd;
- vi current-jboss-jenkins/server/default/conf/gatein/jcr/jbosscache/cluster/cache-config.xml&#xd;
-tqawork@tqa-as03:/mnt/app/PLF$ vi current-jboss-jenkins/server/default/conf/gatein/jcr/jbosscache/cluster/indexer-config.xml &#xd;
-tqawork@tqa-as03:/mnt/app/PLF$ vi current-jboss-jenkins/server/default/conf/gatein/jcr/jbosscache/cluster/lock-config.xml &#xd;
-tqawork@tqa-as03:/mnt/app/PLF$ vi current-jboss-jenkins/server/default/conf/gatein/idm/jbosscache/cluster/api-cache-config.xml &#xd;
-tqawork@tqa-as03:/mnt/app/PLF$ vi current-jboss-jenkins/server/default/conf/gatein/idm/jbosscache/cluster/store-cache-config.xml&#xd;
-- datasources max connections idm=1000, jcr=300</description>
+  <description>lockAcquisitationTimeout 20000/40000 =&gt; 60000</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
