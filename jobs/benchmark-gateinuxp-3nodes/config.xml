@@ -19,6 +19,7 @@
               <string>PERF_PLF_INTRANET_03_DOCUMENT_READ.jmx</string>
               <string>PERF_PLF_INTRANET_04_SPACE_READ.jmx</string>
               <string>PERF_PLF_INTRANET_05_WIKI_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_03_WIKI_NEW_WRITE.jmx</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
