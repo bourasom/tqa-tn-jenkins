@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.tikal.jenkins.plugins.multijob.MultiJobProject>
   <actions/>
-  <description>lockAcquisitationTimeout 20000/40000 =&gt; 60000</description>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
