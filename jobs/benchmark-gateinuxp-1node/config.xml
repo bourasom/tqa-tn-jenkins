@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <com.tikal.jenkins.plugins.multijob.MultiJobProject>
   <actions/>
-  <description>PROFILE READ LOT2&#xd;
-increase idm max pool connexions from 512 -&gt; 1000, jcr from 512 -&gt; 300 </description>
+  <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
