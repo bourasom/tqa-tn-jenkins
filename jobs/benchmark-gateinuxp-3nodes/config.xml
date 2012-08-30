@@ -103,6 +103,11 @@
           <description>-JexpVUGMaxThread for tests execution</description>
           <defaultValue>1000</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>LOOP_COUNT</name>
+          <description>-JexpLoopCount for tests execution</description>
+          <defaultValue>10000000</defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
