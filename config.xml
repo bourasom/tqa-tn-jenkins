@@ -284,7 +284,7 @@
         <string>benchmark-gateinuxp-restore-data</string>
         <string>benchmark-gateinuxp-restore-dataset</string>
         <string>benchmark-gateinuxp-restore-db</string>
-        <string>benchmark-gateinuxp-restore-index</string>
+        <string>benchmark-gateinuxp-restore-index-as01</string>
         <string>benchmark-gateinuxp-start-jboss-as02</string>
         <string>benchmark-gateinuxp-start-jboss-as03</string>
         <string>benchmark-gateinuxp-start-jmxtrans-as02</string>
