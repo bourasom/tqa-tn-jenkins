@@ -28,19 +28,19 @@
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-restore-index</jobName>
+          <jobName>benchmark-gateinuxp-restore-index-as01</jobName>
           <jobProperties>NODE=tqa-as01</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-restore-index</jobName>
+          <jobName>benchmark-gateinuxp-restore-index-as01</jobName>
           <jobProperties>NODE=tqa-as02</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-restore-index</jobName>
+          <jobName>benchmark-gateinuxp-restore-index-as01</jobName>
           <jobProperties>NODE=tqa-as03</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
