@@ -188,18 +188,6 @@
       <nodeProperties/>
     </slave>
     <slave>
-      <temporaryOfflineCause class="hudson.slaves.OfflineCause$SimpleOfflineCause">
-        <description>
-          <holder>
-            <owner>hudson.slaves.Messages</owner>
-          </holder>
-          <key>SlaveComputer.DisconnectedBy</key>
-          <args>
-            <string>aheritier</string>
-            <string></string>
-          </args>
-        </description>
-      </temporaryOfflineCause>
       <name>tqa-db01</name>
       <description></description>
       <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
