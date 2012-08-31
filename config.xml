@@ -282,6 +282,7 @@
         <string>benchmark-gateinuxp-launch-jmeter-tests</string>
         <string>benchmark-gateinuxp-launch-jmeter-warmup</string>
         <string>benchmark-gateinuxp-restore-data</string>
+        <string>benchmark-gateinuxp-restore-dataset</string>
         <string>benchmark-gateinuxp-restore-db</string>
         <string>benchmark-gateinuxp-restore-index</string>
         <string>benchmark-gateinuxp-start-jboss-as02</string>
