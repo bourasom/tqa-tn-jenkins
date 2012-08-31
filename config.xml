@@ -281,6 +281,7 @@
         <string>benchmark-gateinuxp-extract-results</string>
         <string>benchmark-gateinuxp-launch-jmeter-tests</string>
         <string>benchmark-gateinuxp-launch-jmeter-warmup</string>
+        <string>benchmark-gateinuxp-restore-data</string>
         <string>benchmark-gateinuxp-start-jboss-as02</string>
         <string>benchmark-gateinuxp-start-jboss-as03</string>
         <string>benchmark-gateinuxp-start-jmxtrans-as02</string>
