@@ -14,7 +14,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>sudo cp -prf /mnt/data/mysql.origin /mnt/data/mysql.backup
+      <command>sudo rm -rf /mnt/data/mysql.backup
+sudo cp -prf /mnt/data/mysql.origin /mnt/data/mysql.backup
+# The copy doesn&apos;t keep rights even with the -p option. Strange.
 sudo chown -R mysql:mysql /mnt/data/mysql.backup</command>
     </hudson.tasks.Shell>
   </builders>
