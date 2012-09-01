@@ -18,8 +18,8 @@
 sudo service mysql stop
 sudo rm -rf /mnt/data/mysql
 sudo mv /mnt/data/mysql.backup /mnt/data/mysql
-#sudo service mysql start
-#sudo service puppet start</command>
+sudo service mysql start
+sudo service puppet start</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
