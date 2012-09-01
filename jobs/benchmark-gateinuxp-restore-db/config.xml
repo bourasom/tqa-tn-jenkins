@@ -23,6 +23,15 @@ sudo cp -prf /mnt/data/mysql.origin /mnt/data/mysql.backup
 #sudo service puppet start</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>benchmark-gateinuxp-recreate-db-backup</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
   <buildWrappers/>
 </project>
