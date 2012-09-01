@@ -14,13 +14,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>sudo service puppet stop
-sudo service mysql stop
-sudo rm -rf /mnt/data/mysql
-sudo mv /mnt/data/mysql.backup /mnt/data/mysql
-sudo cp -prf /mnt/data/mysql.origin /mnt/data/mysql.backup
-#sudo service mysql start
-#sudo service puppet start</command>
+      <command>sudo cp -prf /mnt/data/mysql.origin /mnt/data/mysql.backup</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
