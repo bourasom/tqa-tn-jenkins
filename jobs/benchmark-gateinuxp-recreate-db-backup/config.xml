@@ -14,7 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>sudo cp -prf /mnt/data/mysql.origin /mnt/data/mysql.backup</command>
+      <command>sudo cp -prf /mnt/data/mysql.origin /mnt/data/mysql.backup
+sudo chown -R mysql:mysql /mnt/data/mysql.backup</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
