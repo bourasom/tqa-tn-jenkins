@@ -12,7 +12,12 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>rm -rf /mnt/app/PLF/current-jboss-jenkins/server/default/data
+tar -C /mnt/app/PLF/current-jboss-jenkins/server/default/data -xvf /mnt/nas/DATASETS/DB-INT2/DATASET-PLF-3.5.x-Intranet_LOT2-V02-UPGRADED/gatein-indexes/data.tar</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
