@@ -15,7 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>rm -rf /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data
-tar -C /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/ -xvf /mnt/data/datasets/DATASET-PLF-3.5.x-Intranet_LOT2-V02-UPGRADED/gatein-data/data.tar</command>
+tar -C /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/ -xvf /mnt/nas/DATASETS/DB-INT2/DATASET-PLF-3.5.x-Intranet_LOT2-V02-UPGRADED/gatein-data/data.tar</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
