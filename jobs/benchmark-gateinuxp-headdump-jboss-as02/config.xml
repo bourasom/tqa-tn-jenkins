@@ -28,7 +28,7 @@ fi</command>
   </builders>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>jboss/server/default/deploy/jbossweb.sar/server.xml,jboss/server/default/conf/gatein/jcr/jbosscache/local/*,jboss/server/default/conf/gatein/jcr/jbosscache/cluster/*,jboss/server/default/deploy/gatein-ds.xml,jboss/server/default/conf/gatein/configuration.properties,jboss/bin/run.conf,results/startJBossServer.env</artifacts>
+      <artifacts>*.bz2</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
