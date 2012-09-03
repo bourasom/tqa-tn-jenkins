@@ -52,7 +52,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>${WORKSPACE}/scripts/generateHeapDumpJBossServer.sh</command>
+      <command>${WORKSPACE}/scripts/generateThreadDumpJBossServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
