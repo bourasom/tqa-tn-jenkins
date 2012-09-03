@@ -14,11 +14,16 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>rm -f ${WORKSPACE}/jboss
-ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
-rm -f ${WORKSPACE}/results
-ln -fs /mnt/data/results ${WORKSPACE}/results
-BUILD_ID=dontKillMe ${WORKSPACE}/scripts/startJBossServer.sh</command>
+      <command>JBOSS_PIDFILE=${JBOSS_HOME}/server.pid
+DATE=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
+HOST=`hostname -s`
+if [ -f ${JBOSS_PIDFILE} ]; then
+  JBOSS_PID=$(cat ${JBOSS_PIDFILE})
+  jmap -dump:format=b,file=${WORKSPACE}/jboss-${DATE}-${HOST}-heapdump.dump,live ${JBOSS_PID}
+  bzip2 ${WORKSPACE}/jboss-${DATE}-${HOST}-heapdump.dump
+else
+  echo &quot;JBOSS PID not found in ${JBOSS_PIDFILE}&quot;
+fi</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
