@@ -144,7 +144,7 @@
         <hudson.model.BooleanParameterDefinition>
           <name>GROUPING_REQUESTS_BY_USERS_LEVEL</name>
           <description>-JexpGroupingRequestsByUsersLevel</description>
-          <defaultValue>true</defaultValue>
+          <defaultValue>false</defaultValue>
         </hudson.model.BooleanParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>LOOP_COUNT</name>
