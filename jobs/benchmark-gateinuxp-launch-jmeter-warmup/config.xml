@@ -67,11 +67,25 @@
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
-        <hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
           <name>HOST</name>
           <description>The host on which the test is launched</description>
-          <defaultValue>tqa-ap.exoplatform.lantqa-ap01.exoplatform.lantqa-ap02.exoplatform.lantqa-ap03.exoplatform.lantqa-ac.exoplatform.lantqa-ac01.exoplatform.lantqa-ac02.exoplatform.lantqa-ac03.exoplatform.lantqa-as01.exoplatform.lantqa-as02.exoplatform.lantqa-as03.exoplatform.lan</defaultValue>
-        </hudson.model.StringParameterDefinition>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>tqa-ap.exoplatform.lan</string>
+              <string>tqa-ap01.exoplatform.lan</string>
+              <string>tqa-ap02.exoplatform.lan</string>
+              <string>tqa-ap03.exoplatform.lan</string>
+              <string>tqa-ac.exoplatform.lan</string>
+              <string>tqa-ac01.exoplatform.lan</string>
+              <string>tqa-ac02.exoplatform.lan</string>
+              <string>tqa-ac03.exoplatform.lan</string>
+              <string>tqa-as01.exoplatform.lan</string>
+              <string>tqa-as02.exoplatform.lan</string>
+              <string>tqa-as03.exoplatform.lan</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>PORT</name>
           <description>The port on which the test is launched</description>
