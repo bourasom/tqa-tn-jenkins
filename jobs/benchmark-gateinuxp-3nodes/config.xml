@@ -258,7 +258,7 @@ VUG_UP_DURATION=180
 VUG_UP_RAMPUP=30
 VUG_DOWN_STEP=100
 VUG_DOWN_DURATION=15
-GROUPING_REQUESTS_BY_USERS_LEVEL=true</jobProperties>
+GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
