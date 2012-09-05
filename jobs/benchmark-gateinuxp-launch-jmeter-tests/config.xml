@@ -41,6 +41,7 @@
             <a class="string-array">
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT1_04_SPACE_READ_SpaceLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_04_SPACE_READ_SpaceLinks.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -51,6 +52,7 @@
             <a class="string-array">
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT1_02_DISCUSSION_TopicsLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_02_DISCUSSION_TopicsLinks.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -61,6 +63,7 @@
             <a class="string-array">
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT1_05_WIKI_READ_WikiLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_05_WIKI_READ_WikiLinks.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
