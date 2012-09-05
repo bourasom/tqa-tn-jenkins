@@ -111,6 +111,16 @@
           <description>-JexpLoopCount for tests execution</description>
           <defaultValue>10000000</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>THREAD_COUNT</name>
+          <description>-JexpThreadCount for tests execution</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DURATION</name>
+          <description>-JexpDuration for tests execution</description>
+          <defaultValue>0</defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
