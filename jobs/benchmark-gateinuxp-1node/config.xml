@@ -99,7 +99,7 @@
         <hudson.model.StringParameterDefinition>
           <name>PAGE_RESPONSE_TIME</name>
           <description>-JexpPageResponseTimeout</description>
-          <defaultValue>30000</defaultValue>
+          <defaultValue>75000</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>VUG_MAX_THREAD</name>
