@@ -117,6 +117,7 @@
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
               <string>NONE</string>
+              <string>SQLMBeanStats.btm</string>
               <string>Dummy.btm</string>
             </a>
           </choices>
