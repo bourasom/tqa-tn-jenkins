@@ -283,6 +283,7 @@
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as02</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as03</string>
         <string>benchmark-gateinuxp-generate-threaddump-jboss-as02</string>
+        <string>benchmark-gateinuxp-generate-threaddump-jboss-as03</string>
         <string>benchmark-gateinuxp-launch-jmeter-tests</string>
         <string>benchmark-gateinuxp-launch-jmeter-warmup</string>
         <string>benchmark-gateinuxp-recreate-data-backup</string>
