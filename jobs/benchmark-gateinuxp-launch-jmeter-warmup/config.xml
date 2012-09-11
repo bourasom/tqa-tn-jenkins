@@ -64,6 +64,7 @@
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT1_05_WIKI_READ_WikiLinks.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_05_WIKI_READ_WikiLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_05_WIKI_READ_WikiLinks_1000.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
