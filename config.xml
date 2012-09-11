@@ -418,7 +418,11 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>14</int>
+          <int>16</int>
+          <string>BYTEMAN_HOME</string>
+          <string>${TOOLS_DIR}/Byteman/${BYTEMAN_VERSION}</string>
+          <string>BYTEMAN_VERSION</string>
+          <string>2.1.0</string>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
