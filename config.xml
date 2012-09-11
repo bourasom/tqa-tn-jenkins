@@ -123,7 +123,7 @@
       <name>tqa-as02</name>
       <description></description>
       <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
-      <numExecutors>1</numExecutors>
+      <numExecutors>2</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
