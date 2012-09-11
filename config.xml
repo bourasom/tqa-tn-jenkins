@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson>
   <disabledAdministrativeMonitors/>
-  <version>1.478</version>
+  <version>1.481</version>
   <numExecutors>1</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
@@ -437,7 +437,7 @@
           <string>EXO_USERNAME</string>
           <string>tqa</string>
           <string>JAVA_HOME</string>
-          <string>/usr/lib/jvm/jdk-sun-6u30-b12-i586/jre</string>
+          <string>/usr/lib/jvm/jdk-sun-6u30-b12-x64/jre</string>
           <string>JBOSS_HOME</string>
           <string>/mnt/app/PLF/current-jboss-jenkins</string>
           <string>JMETER_HOME</string>
