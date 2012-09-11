@@ -111,6 +111,15 @@
           <description>-JexpLoopCount for tests execution</description>
           <defaultValue>10000000</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BYTEMAN_SCRIPT_FILE</name>
+          <description>The byteman script to activate</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NONE</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
