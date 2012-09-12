@@ -61,7 +61,7 @@ ${WORKSPACE}/scripts/stopJBossServer.sh</command>
   </builders>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>jboss/server/default/log/server.log,results/stopJBossServer.env</artifacts>
+      <artifacts>results/stopJBossServer.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
@@ -79,8 +79,11 @@ ${WORKSPACE}/scripts/stopJBossServer.sh</command>
           </email>
         </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
       </configuredTriggers>
+      <contentType>default</contentType>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
       <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <attachmentsPattern></attachmentsPattern>
+      <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>
