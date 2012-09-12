@@ -259,7 +259,8 @@
     <EnvInjectBuilder>
       <info>
         <propertiesContent>SCENARIO_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${SCENARIO_FILE}
-CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/</propertiesContent>
+CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/
+ARCHIVE_RESULTS=false</propertiesContent>
       </info>
     </EnvInjectBuilder>
     <hudson.tasks.Shell>
