@@ -46,10 +46,5 @@ CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jm
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers>
-    <EnvInjectPasswordWrapper>
-      <injectGlobalPasswords>true</injectGlobalPasswords>
-      <passwordEntries/>
-    </EnvInjectPasswordWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
