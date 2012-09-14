@@ -12,15 +12,16 @@
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
               <string>PERF_PLF_INTRANET_00_LOGIN.jmx</string>
-              <string>PERF_PLF_INTRANET_01_DISCUSSION_WRITE.jmx</string>
               <string>PERF_PLF_INTRANET_01_PROFILE_READ.jmx</string>
-              <string>PERF_PLF_INTRANET_02_DISCUSSION_READ.jmx</string>
-              <string>PERF_PLF_INTRANET_02_WIKI_UPDATE_WRITE.jmx</string>
               <string>PERF_PLF_INTRANET_03_DOCUMENT_READ.jmx</string>
               <string>PERF_PLF_INTRANET_04_SPACE_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_02_DISCUSSION_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_02_DISCUSSION_READ-SIMPLE.jmx</string>
+              <string>PERF_PLF_INTRANET_01_DISCUSSION_WRITE.jmx</string>
               <string>PERF_PLF_INTRANET_05_WIKI_READ.jmx</string>
               <string>PERF_PLF_INTRANET_05_WIKI_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_03_WIKI_NEW_WRITE.jmx</string>
+              <string>PERF_PLF_INTRANET_02_WIKI_UPDATE_WRITE.jmx</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -54,6 +55,8 @@
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT1_02_DISCUSSION_TopicsLinks.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_02_DISCUSSION_TopicsLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_02_DISCUSSION-SIMPLE_TopicsLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_02_DISCUSSION-SIMPLE_TopicsLinks_1000.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
