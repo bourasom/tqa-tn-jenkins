@@ -331,7 +331,7 @@
         <hudson.plugins.view.dashboard.builds.LatestBuilds>
           <id>dashboard_portlet_2</id>
           <name>Latest builds</name>
-          <numBuilds>10</numBuilds>
+          <numBuilds>20</numBuilds>
         </hudson.plugins.view.dashboard.builds.LatestBuilds>
       </rightPortlets>
       <topPortlets/>
