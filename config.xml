@@ -208,7 +208,7 @@
       <name>tqa-mon01</name>
       <description></description>
       <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
-      <numExecutors>2</numExecutors>
+      <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
       <launcher class="hudson.plugins.sshslaves.SSHLauncher">
