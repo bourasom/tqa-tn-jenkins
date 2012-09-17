@@ -129,7 +129,7 @@ ${WORKSPACE}/benchmark-scripts/extractResults.sh</command>
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>results/latest/*.png,results/latest/*.jtl,results/latest/*.env</artifacts>
+      <artifacts>results/latest/*.png,results/latest/*.jtl,results/latest/*.env,,results/latest/*.csv</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
   </publishers>
