@@ -105,6 +105,10 @@ ${WORKSPACE}/benchmark-scripts/extractResults.sh</command>
       <javaOpts></javaOpts>
       <classPath></classPath>
     </hudson.plugins.groovy.Groovy>
+    <hudson.tasks.Shell>
+      <command>cp -prf ${WORKSPACE}/results/latest/*.txt /mnt/nfs4/results/current/jmeter-results/
+cp -prf ${WORKSPACE}/results/latest/*.csv /mnt/nfs4/results/current/jmeter-results/</command>
+    </hudson.tasks.Shell>
   </builders>
   <publishers>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
