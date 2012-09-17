@@ -94,6 +94,17 @@ ln -fs /mnt/data/results ${WORKSPACE}/results
 export DISPLAY=&quot;:8&quot;
 ${WORKSPACE}/benchmark-scripts/extractResults.sh</command>
     </hudson.tasks.Shell>
+    <hudson.plugins.groovy.Groovy>
+      <scriptSource class="hudson.plugins.groovy.FileScriptSource">
+        <scriptFile>${WORKSPACE}/plamarque-tools/JTLAnalyzer/src/PerfStats.groovy</scriptFile>
+      </scriptSource>
+      <groovyName>groovy-2.0.x</groovyName>
+      <parameters></parameters>
+      <scriptParameters>-f ${WORKSPACE}/results/latest/bench.jtl -limit 6000</scriptParameters>
+      <properties></properties>
+      <javaOpts></javaOpts>
+      <classPath></classPath>
+    </hudson.plugins.groovy.Groovy>
   </builders>
   <publishers>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
