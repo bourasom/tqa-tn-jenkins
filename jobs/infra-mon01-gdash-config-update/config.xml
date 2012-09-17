@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <name></name>
+        <name>origin</name>
         <refspec></refspec>
         <url>git@github.com:exoplatform/qa-gdash-config.git</url>
       </hudson.plugins.git.UserRemoteConfig>
