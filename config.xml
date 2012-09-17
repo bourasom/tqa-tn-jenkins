@@ -204,6 +204,23 @@
       <label>tqa-db01 tqa-db</label>
       <nodeProperties/>
     </slave>
+    <slave>
+      <name>tqa-mon01</name>
+      <description></description>
+      <remoteFS>/mnt/data/jenkins-agent/</remoteFS>
+      <numExecutors>2</numExecutors>
+      <mode>EXCLUSIVE</mode>
+      <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher">
+        <host>tqa-data01.exoplatform.lan</host>
+        <port>22</port>
+        <username>tqawork</username>
+        <password>diZDZmzbWv79Z6UtjR+cKw==</password>
+        <privatekey>/var/lib/jenkins/.ssh/id_rsa</privatekey>
+      </launcher>
+      <label>tqa-data01 tqa-data</label>
+      <nodeProperties/>
+    </slave>
   </slaves>
   <quietPeriod>1</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
