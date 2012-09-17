@@ -304,6 +304,7 @@
         <string>benchmark-gateinuxp-stop-jmeter</string>
         <string>benchmark-gateinuxp-stop-jmxtrans-as02</string>
         <string>benchmark-gateinuxp-stop-jmxtrans-as03</string>
+        <string>infra-mon01-gdash-config-update</string>
       </jobNames>
       <jobFilters/>
       <columns>
