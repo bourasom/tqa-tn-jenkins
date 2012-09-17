@@ -50,7 +50,13 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>rm -rf /etc/gdash/templates/*
+cp -prf ${WORKSPACE}/sources/templates/* /etc/gdash/templates/
+sudo service apache2 restart</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
