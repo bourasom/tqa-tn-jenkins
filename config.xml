@@ -430,7 +430,7 @@
   </views>
   <primaryView>Gatein UXP</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
-  <label>master tqa-mon tqa-mon01</label>
+  <label></label>
   <nodeProperties/>
   <globalNodeProperties>
     <hudson.slaves.EnvironmentVariablesNodeProperty>
