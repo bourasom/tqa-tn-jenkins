@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.groovy.Groovy_-DescriptorImpl>
+  <helpRedirect/>
+  <instanceCounter>
+    <value>1</value>
+  </instanceCounter>
+  <allowMacro>false</allowMacro>
+  <installations/>
+  <installations2>
+    <hudson.plugins.groovy.GroovyInstallation>
+      <name>groovy-2.0.x</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.plugins.groovy.GroovyInstaller>
+              <id>2.0.2</id>
+            </hudson.plugins.groovy.GroovyInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </hudson.plugins.groovy.GroovyInstallation>
+  </installations2>
+</hudson.plugins.groovy.Groovy_-DescriptorImpl>
