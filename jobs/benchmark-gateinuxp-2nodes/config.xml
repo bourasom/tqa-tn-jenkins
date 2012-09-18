@@ -62,7 +62,7 @@
         </hudson.model.ChoiceParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>WIKI_DATASET_NAME</name>
-          <description>The set ok wiki pages to use</description>
+          <description>The set of wiki pages to use</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
               <string>NONE</string>
@@ -70,6 +70,16 @@
               <string>PERF_PLF_INTRANET_DBINT2_05_WIKI_READ_WikiLinks.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_05_WIKI_READ_WikiLinks_1000.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_05_WIKI_READ-SIMPLE_WikiLinks_1000.csv</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>DOCUMENT_DATASET_NAME</name>
+          <description>The set of documents to use</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>NONE</string>
+              <string>PERF_PLF_INTRANET_DBINT2_03_DOCUMENT_READ-SIMPLE.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
