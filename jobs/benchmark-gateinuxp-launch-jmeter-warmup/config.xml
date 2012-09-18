@@ -14,6 +14,7 @@
               <string>PERF_PLF_INTRANET_00_LOGIN.jmx</string>
               <string>PERF_PLF_INTRANET_01_PROFILE_READ.jmx</string>
               <string>PERF_PLF_INTRANET_03_DOCUMENT_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_03_DOCUMENT_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_04_SPACE_READ.jmx</string>
               <string>PERF_PLF_INTRANET_02_DISCUSSION_READ.jmx</string>
               <string>PERF_PLF_INTRANET_02_DISCUSSION_READ-SIMPLE.jmx</string>
