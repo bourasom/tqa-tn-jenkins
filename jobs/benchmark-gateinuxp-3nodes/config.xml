@@ -344,7 +344,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
       </phaseJobs>
-      <continuationCondition>SUCCESSFUL</continuationCondition>
+      <continuationCondition>COMPLETED</continuationCondition>
     </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
   </builders>
   <publishers>
