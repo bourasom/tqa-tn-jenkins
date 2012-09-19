@@ -17,6 +17,7 @@
               <string>PERF_PLF_INTRANET_03_DOCUMENT_READ.jmx</string>
               <string>PERF_PLF_INTRANET_03_DOCUMENT_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_04_SPACE_READ.jmx</string>
+              <string>PERF_PLF_INTRANET_04_SPACE_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_02_DISCUSSION_READ.jmx</string>
               <string>PERF_PLF_INTRANET_02_DISCUSSION_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_01_DISCUSSION_WRITE.jmx</string>
@@ -46,6 +47,7 @@
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT1_04_SPACE_READ_SpaceLinks.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_04_SPACE_READ_SpaceLinks.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_04_SPACE_READ-SIMPLE_SpaceLinks.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
