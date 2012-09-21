@@ -133,6 +133,11 @@
           <defaultValue>100</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
+          <name>THINK_TIME</name>
+          <description>-JexpThinkTime</description>
+          <defaultValue>20000</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
           <name>LOOP_COUNT</name>
           <description>-JexpLoopCount for tests execution</description>
           <defaultValue>10000000</defaultValue>
