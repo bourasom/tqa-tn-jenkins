@@ -22,6 +22,11 @@
           <description>Default JAVA_OPTS to pass to JBoss</description>
           <defaultValue>-Xms10g -Xmx16g -XX:MaxPermSize=512m -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Dsun.lang.ClassLoader.allowArraySyntax=true</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>JPROFILER_ACTIVATED</name>
+          <description>Allow to activate JPROFILER agent (port : 8849)</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
