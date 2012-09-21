@@ -3,7 +3,17 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>VUG_UP_STEP</name>
+          <description>-JexpVUGUpStep</description>
+          <defaultValue>100</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="org.jenkinsci.plugins.multiplescms.MultiSCM">
     <scms>
       <hudson.plugins.git.GitSCM>
