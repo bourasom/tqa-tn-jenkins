@@ -188,7 +188,8 @@ cd -</command>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-start-jboss-as02</jobName>
           <jobProperties>BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
-JAVA_OPTS=${JAVA_OPTS}</jobProperties>
+JAVA_OPTS=${JAVA_OPTS}
+JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
@@ -201,7 +202,8 @@ JAVA_OPTS=${JAVA_OPTS}</jobProperties>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-start-jboss-as03</jobName>
           <jobProperties>BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
-JAVA_OPTS=${JAVA_OPTS}</jobProperties>
+JAVA_OPTS=${JAVA_OPTS}
+JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
