@@ -110,7 +110,7 @@ ${WORKSPACE}/benchmark-scripts/extractResults.sh</command>
       </scriptSource>
       <groovyName>groovy-2.0.x</groovyName>
       <parameters></parameters>
-      <scriptParameters>-f ${WORKSPACE}/results/latest/bench.jtl -limit 6000</scriptParameters>
+      <scriptParameters>-f ${WORKSPACE}/results/latest/bench.jtl --step ${VUG_UP_STEP} --limit 8000</scriptParameters>
       <properties></properties>
       <javaOpts></javaOpts>
       <classPath></classPath>
