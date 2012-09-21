@@ -318,7 +318,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-gateinuxp-extract-results</jobName>
-          <jobProperties></jobProperties>
+          <jobProperties>VUG_UP_STEP=${VUG_UP_STEP}</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
