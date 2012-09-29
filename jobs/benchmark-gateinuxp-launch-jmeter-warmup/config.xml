@@ -25,6 +25,7 @@
               <string>PERF_PLF_INTRANET_05_WIKI_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_03_WIKI_NEW_WRITE.jmx</string>
               <string>PERF_PLF_INTRANET_02_WIKI_UPDATE_WRITE.jmx</string>
+              <string>PERF_PLF_INTRANET_02_WIKI_UPDATE_WRITE-SIMPLE.jmx</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
