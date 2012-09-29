@@ -21,6 +21,7 @@
               <string>PERF_PLF_INTRANET_02_DISCUSSION_READ.jmx</string>
               <string>PERF_PLF_INTRANET_02_DISCUSSION_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_01_DISCUSSION_WRITE.jmx</string>
+              <string>PERF_PLF_INTRANET_01_DISCUSSION_WRITE-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_05_WIKI_READ.jmx</string>
               <string>PERF_PLF_INTRANET_05_WIKI_READ-SIMPLE.jmx</string>
               <string>PERF_PLF_INTRANET_03_WIKI_NEW_WRITE.jmx</string>
