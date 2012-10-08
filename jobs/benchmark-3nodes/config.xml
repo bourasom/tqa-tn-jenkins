@@ -202,7 +202,7 @@ JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
       <phaseName>Start others Application servers nodes</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-start-jboss-as01</jobName>
+          <jobName>benchmark-start-jboss-as01</jobName>
           <jobProperties>BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}</jobProperties>
           <currParams>true</currParams>
