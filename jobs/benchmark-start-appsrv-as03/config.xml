@@ -133,7 +133,7 @@ export BYTEMAN_SCRIPT_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src
 if ${JPROFILER_ACTIVATED}; then
   export JAVA_OPTS=&quot;-agentpath:/mnt/app/tools/jprofiler/7.1.2/bin/linux-x64/libjprofilerti.so=port=8849,nowait $JAVA_OPTS&quot;
 fi
-BUILD_ID=dontKillMe ${WORKSPACE}/benchmark-scripts/startJBossServer.sh</command>
+BUILD_ID=dontKillMe ${WORKSPACE}/benchmark-scripts/startAppServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
