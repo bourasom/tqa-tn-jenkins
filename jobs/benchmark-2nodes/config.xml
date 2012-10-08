@@ -234,7 +234,7 @@ JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
       <phaseName>Warm UP Server</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-launch-jmeter-warmup</jobName>
+          <jobName>benchmark-launch-jmeter-warmup</jobName>
           <jobProperties>SCENARIO_FILE=${SCENARIO_FILE}
 USER_DATASET_NAME=${USER_DATASET_NAME}
 SPACE_DATASET_NAME=${SPACE_DATASET_NAME}
