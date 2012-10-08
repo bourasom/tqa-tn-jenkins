@@ -187,7 +187,7 @@
 ln -s /mnt/data/results ${WORKSPACE}/results
 # We create a directory where we will put all results
 _current_date=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
-_current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF354-JBOSSEAP511-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-2Nodes&quot;
+_current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF354-${APPSRV_TYPE}-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-2Nodes&quot;
 cd /mnt/data/results
 mkdir -p ./${_current_results_dir}
 rm -f ./current
@@ -199,7 +199,8 @@ cd -</command>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-start-jboss-as02</jobName>
-          <jobProperties>BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
+          <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}
+BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}
 JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
           <currParams>true</currParams>
@@ -213,7 +214,8 @@ JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-start-jboss-as03</jobName>
-          <jobProperties>BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
+          <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}
+BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}
 JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
           <currParams>true</currParams>
@@ -313,13 +315,13 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-stop-jboss-as02</jobName>
-          <jobProperties></jobProperties>
+          <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-stop-jboss-as03</jobName>
-          <jobProperties></jobProperties>
+          <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
