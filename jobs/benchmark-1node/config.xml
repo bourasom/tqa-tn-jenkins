@@ -287,7 +287,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
       <phaseName>Stop and Report</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-stop-jboss-as02</jobName>
+          <jobName>benchmark-stop-jboss-as02</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
