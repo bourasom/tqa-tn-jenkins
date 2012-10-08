@@ -222,7 +222,7 @@ JAVA_OPTS=${JAVA_OPTS}</jobProperties>
       <phaseName>Start JMXTrans</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-start-jmxtrans-as01</jobName>
+          <jobName>benchmark-start-jmxtrans-as01</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
