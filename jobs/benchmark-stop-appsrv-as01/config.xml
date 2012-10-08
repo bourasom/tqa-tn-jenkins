@@ -71,7 +71,7 @@
 ln -s ${JBOSS_HOME} ${WORKSPACE}/jboss
 rm -f ${WORKSPACE}/results
 ln -s /mnt/data/results ${WORKSPACE}/results
-${WORKSPACE}/scripts/stopJBossServer.sh</command>
+${WORKSPACE}/scripts/stopAppServer.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
