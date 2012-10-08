@@ -347,7 +347,7 @@
       <bottomPortlets/>
     </hudson.plugins.view.dashboard.Dashboard>
   </views>
-  <primaryView>Gatein UXP</primaryView>
+  <primaryView>TQA Dashboard</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
   <label></label>
   <nodeProperties/>
