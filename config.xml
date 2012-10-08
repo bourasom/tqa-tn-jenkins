@@ -296,7 +296,6 @@
         <string>benchmark-2nodes</string>
         <string>benchmark-3nodes</string>
         <string>benchmark-extract-results</string>
-        <string>benchmark-gateinuxp-launch-jmeter-warmup</string>
         <string>benchmark-gateinuxp-recreate-data-backup</string>
         <string>benchmark-gateinuxp-recreate-db-backup</string>
         <string>benchmark-gateinuxp-restore-data</string>
@@ -321,6 +320,7 @@
         <string>benchmark-generate-threaddump-jboss-as02</string>
         <string>benchmark-generate-threaddump-jboss-as03</string>
         <string>benchmark-launch-jmeter-tests</string>
+        <string>benchmark-launch-jmeter-warmup</string>
         <string>infra-mon01-gdash-config-update</string>
       </jobNames>
       <jobFilters/>
