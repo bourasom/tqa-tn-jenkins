@@ -314,7 +314,7 @@
           <string>JMETER_PLUGINS_VERSION</string>
           <string>0.5.4</string>
           <string>JMETER_VERSION</string>
-          <string>2.7</string>
+          <string>2.8</string>
           <string>TARGET_GRAPHITE_HOST</string>
           <string>tqa-graphite.exoplatform.lan</string>
           <string>TARGET_HOST</string>
