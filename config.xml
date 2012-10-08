@@ -288,11 +288,13 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>16</int>
+          <int>17</int>
           <string>BYTEMAN_HOME</string>
           <string>${TOOLS_DIR}/Byteman/${BYTEMAN_VERSION}</string>
           <string>BYTEMAN_VERSION</string>
           <string>2.1.0</string>
+          <string>CATALINA_HOME</string>
+          <string>/mnt/app/PLF/current-tomcat-jenkins</string>
           <string>DEPLOYMENT_JDBC_IDM_URL</string>
           <string>jdbc:mysql://tqa-db01.exoplatform.lan:3306/plf_idm</string>
           <string>DEPLOYMENT_JDBC_IDM_USERNAME</string>
