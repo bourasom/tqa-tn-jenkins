@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>tqa-data01</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>rm -rf /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/tmp
+mkdir /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/tmp
+tar -C /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/tmp -xf /mnt/nas/DATASETS/DB-INT2/DATASET-PLF-3.5.x-Intranet_LOT2-V02-UPGRADED/gatein-data/data.tar
+mv /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/tmp/data /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data.backup
+rm -rf /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/tmp</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
