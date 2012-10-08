@@ -198,7 +198,7 @@ cd -</command>
       <phaseName>Start Primary Application server</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-start-jboss-as02</jobName>
+          <jobName>benchmark-start-appsrv-as02</jobName>
           <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}
 BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}
