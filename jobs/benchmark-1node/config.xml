@@ -293,7 +293,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-stop-jmxtrans-as02</jobName>
+          <jobName>benchmark-stop-jmxtrans-as02</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
