@@ -339,7 +339,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-stop-jboss-as03</jobName>
+          <jobName>benchmark-stop-appsrv-as03</jobName>
           <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
