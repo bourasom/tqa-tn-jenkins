@@ -25,7 +25,7 @@ mysql -e &quot;drop table IF EXISTS PLF_35X_INTLOT2_JCR.JCR_CONFIG;&quot;</comma
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>benchmark-gateinuxp-recreate-db-backup</childProjects>
+      <childProjects>benchmark-recreate-db-backup</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
