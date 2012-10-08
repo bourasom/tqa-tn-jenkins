@@ -7,6 +7,16 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.ChoiceParameterDefinition>
+          <name>APPSRV_TYPE</name>
+          <description>Application Server type</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>tomcat</string>
+              <string>jboss</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
           <name>SCENARIO_FILE</name>
           <description>The scenario to execute</description>
           <choices class="java.util.Arrays$ArrayList">
