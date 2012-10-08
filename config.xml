@@ -296,7 +296,6 @@
         <string>benchmark-2nodes</string>
         <string>benchmark-3nodes</string>
         <string>benchmark-extract-results</string>
-        <string>benchmark-gateinuxp-start-jmxtrans-as02</string>
         <string>benchmark-gateinuxp-start-jmxtrans-as03</string>
         <string>benchmark-gateinuxp-stop-jboss-as02</string>
         <string>benchmark-gateinuxp-stop-jboss-as03</string>
@@ -321,6 +320,7 @@
         <string>benchmark-restore-index-as03</string>
         <string>benchmark-start-jboss-as02</string>
         <string>benchmark-start-jboss-as03</string>
+        <string>benchmark-start-jmxtrans-as02</string>
         <string>infra-mon01-gdash-config-update</string>
       </jobNames>
       <jobFilters/>
