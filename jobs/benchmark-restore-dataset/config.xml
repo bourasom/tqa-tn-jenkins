@@ -16,7 +16,7 @@
       <phaseName>Restore all the dataset</phaseName>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-restore-db</jobName>
+          <jobName>benchmark-restore-db</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
