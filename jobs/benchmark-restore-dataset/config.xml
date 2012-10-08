@@ -28,7 +28,7 @@
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-restore-index-as01</jobName>
+          <jobName>benchmark-restore-index-as01</jobName>
           <jobProperties>NODE=tqa-as01</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
