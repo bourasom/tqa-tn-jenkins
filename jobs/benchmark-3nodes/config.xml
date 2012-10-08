@@ -209,7 +209,7 @@ JAVA_OPTS=${JAVA_OPTS}</jobProperties>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-start-jboss-as03</jobName>
+          <jobName>benchmark-start-jboss-as03</jobName>
           <jobProperties>BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}</jobProperties>
           <currParams>true</currParams>
