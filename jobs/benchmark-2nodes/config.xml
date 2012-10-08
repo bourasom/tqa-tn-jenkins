@@ -222,7 +222,7 @@ JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
           <exposedSCM>false</exposedSCM>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
-          <jobName>benchmark-gateinuxp-start-jmxtrans-as03</jobName>
+          <jobName>benchmark-start-jmxtrans-as03</jobName>
           <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
