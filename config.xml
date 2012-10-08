@@ -296,7 +296,6 @@
         <string>benchmark-2nodes</string>
         <string>benchmark-3nodes</string>
         <string>benchmark-extract-results</string>
-        <string>benchmark-gateinuxp-generate-heapdump-jboss-as01</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as02</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as03</string>
         <string>benchmark-gateinuxp-generate-threaddump-jboss-as01</string>
@@ -321,6 +320,7 @@
         <string>benchmark-gateinuxp-stop-jmeter</string>
         <string>benchmark-gateinuxp-stop-jmxtrans-as02</string>
         <string>benchmark-gateinuxp-stop-jmxtrans-as03</string>
+        <string>benchmark-generate-heapdump-jboss-as01</string>
         <string>infra-mon01-gdash-config-update</string>
       </jobNames>
       <jobFilters/>
