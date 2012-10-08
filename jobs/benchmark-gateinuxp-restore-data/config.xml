@@ -20,7 +20,7 @@ mv /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data.backup /mnt/data/DS/PLF3.5.x/Int
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>benchmark-gateinuxp-recreate-data-backup</childProjects>
+      <childProjects>benchmark-recreate-data-backup</childProjects>
       <threshold>
         <name>SUCCESS</name>
         <ordinal>0</ordinal>
