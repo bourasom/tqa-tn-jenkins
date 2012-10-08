@@ -295,7 +295,7 @@
         <string>benchmark-1node</string>
         <string>benchmark-2nodes</string>
         <string>benchmark-3nodes</string>
-        <string>benchmark-gateinuxp-extract-results</string>
+        <string>benchmark-extract-results</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as01</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as02</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as03</string>
