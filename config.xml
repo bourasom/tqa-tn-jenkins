@@ -294,7 +294,7 @@
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>benchmark-1node</string>
         <string>benchmark-2nodes</string>
-        <string>benchmark-gateinuxp-3nodes</string>
+        <string>benchmark-3nodes</string>
         <string>benchmark-gateinuxp-extract-results</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as01</string>
         <string>benchmark-gateinuxp-generate-heapdump-jboss-as02</string>
