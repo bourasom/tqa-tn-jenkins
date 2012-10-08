@@ -233,16 +233,6 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>benchmark-plf-process-start</string>
-        <string>benchmark-plf-task-download-dataset</string>
-        <string>benchmark-plf-task-download-jdbc-driver</string>
-        <string>benchmark-plf-task-download-scenario</string>
-        <string>benchmark-plf-task-prepare-scenario</string>
-        <string>benchmark-plf-task-stop-jmxtrans</string>
-        <string>benchmark-start-jboss-as01</string>
-        <string>benchmark-stop-jboss-as01</string>
-        <string>gatling-acme-5pages-anonymous-apache-cache</string>
-        <string>gatling-acme-5pages-anonymous-apache-nocache</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -256,6 +246,7 @@
         <hudson.views.BuildButtonColumn/>
       </columns>
       <includeRegex>.*</includeRegex>
+      <statusFilter>true</statusFilter>
       <useCssStyle>false</useCssStyle>
       <includeStdJobList>false</includeStdJobList>
       <leftPortletWidth>50%</leftPortletWidth>
