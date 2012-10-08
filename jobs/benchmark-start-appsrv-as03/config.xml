@@ -127,8 +127,10 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>rm -f ${WORKSPACE}/${APPSRV_TYPE}
-ln -fs ${JBOSS_HOME} ${WORKSPACE}/${APPSRV_TYPE}
+      <command>rm -f ${WORKSPACE}/jboss
+ln -fs ${JBOSS_HOME} ${WORKSPACE}/jboss
+rm -f ${WORKSPACE}/tomcat
+ln -fs ${CATALINA_HOME} ${WORKSPACE}/tomcat
 rm -f ${WORKSPACE}/results
 ln -fs /mnt/data/results ${WORKSPACE}/results
 export BYTEMAN_SCRIPT_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/byteman/${BYTEMAN_SCRIPT_FILE}
