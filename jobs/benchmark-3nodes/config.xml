@@ -16,6 +16,11 @@
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PLF_VERSION</name>
+          <description>The reference version (tag) of Platform with which we are comparing our settings</description>
+          <defaultValue>3.5.4</defaultValue>
+        </hudson.model.StringParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>SCENARIO_FILE</name>
           <description>The scenario to execute</description>
@@ -173,7 +178,7 @@
 ln -s /mnt/data/results ${WORKSPACE}/results
 # We create a directory where we will put all results
 _current_date=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`
-_current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF354-${APPSRV_TYPE}-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-3Nodes&quot;
+_current_results_dir=&quot;${_current_date}-${TQA_LAB}-PLF_${PLF_VERSION}-${APPSRV_TYPE}-${SCENARIO_FILE%.jmx}-${VUG_MAX_THREAD}VU-3Nodes&quot;
 cd /mnt/data/results
 mkdir -p ./${_current_results_dir}
 rm -f ./current
@@ -186,6 +191,7 @@ cd -</command>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-start-appsrv-as02</jobName>
           <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}
+PLF_VERSION=${PLF_VERSION}
 BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}
 JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
@@ -201,6 +207,7 @@ JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-start-appsrv-as01</jobName>
           <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}
+PLF_VERSION=${PLF_VERSION}
 BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}</jobProperties>
           <currParams>true</currParams>
@@ -209,6 +216,7 @@ JAVA_OPTS=${JAVA_OPTS}</jobProperties>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-start-appsrv-as03</jobName>
           <jobProperties>APPSRV_TYPE=${APPSRV_TYPE}
+PLF_VERSION=${PLF_VERSION}
 BYTEMAN_SCRIPT_FILE=${BYTEMAN_SCRIPT_FILE}
 JAVA_OPTS=${JAVA_OPTS}</jobProperties>
           <currParams>true</currParams>
@@ -389,7 +397,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
             <verbose>false</verbose>
             <transfers>
               <jenkins.plugins.publish__over__ssh.BapSshTransfer>
-                <remoteDirectory>&apos;archives/gateinuxp/&apos;yyyyMMdd-HHmmss&apos;-${TQA_LAB}-PLF354-${APPSRV_TYPE}-${SCENARIO_FILE}-${VUG_MAX_THREAD}VU-3Nodes&apos;</remoteDirectory>
+                <remoteDirectory>&apos;archives/gateinuxp/&apos;yyyyMMdd-HHmmss&apos;-${TQA_LAB}-PLF_${PLF_VERSION}-${APPSRV_TYPE}-${SCENARIO_FILE}-${VUG_MAX_THREAD}VU-3Nodes&apos;</remoteDirectory>
                 <sourceFiles>results/current/**/*</sourceFiles>
                 <excludes></excludes>
                 <removePrefix>results/current/</removePrefix>
