@@ -255,24 +255,28 @@
       <rightPortletWidth>50%</rightPortletWidth>
       <leftPortlets>
         <hudson.plugins.view.dashboard.core.HudsonStdJobsPortlet>
-          <id>dashboard_portlet_5</id>
+          <id>dashboard_portlet_1</id>
           <name>Jenkins jobs list</name>
         </hudson.plugins.view.dashboard.core.HudsonStdJobsPortlet>
       </leftPortlets>
       <rightPortlets>
         <hudson.plugins.view.dashboard.builds.LatestBuilds>
-          <id>dashboard_portlet_6</id>
+          <id>dashboard_portlet_2</id>
           <name>Latest builds</name>
-          <numBuilds>20</numBuilds>
+          <numBuilds>10</numBuilds>
         </hudson.plugins.view.dashboard.builds.LatestBuilds>
         <hudson.plugins.view.dashboard.stats.StatSlaves>
-          <id>dashboard_portlet_7</id>
+          <id>dashboard_portlet_3</id>
           <name>Slaves statistics</name>
         </hudson.plugins.view.dashboard.stats.StatSlaves>
         <hudson.plugins.view.dashboard.stats.StatJobs>
-          <id>dashboard_portlet_8</id>
+          <id>dashboard_portlet_4</id>
           <name>Job statistics</name>
         </hudson.plugins.view.dashboard.stats.StatJobs>
+        <hudson.plugins.view.dashboard.stats.StatBuilds>
+          <id>dashboard_portlet_5</id>
+          <name>Build statistics</name>
+        </hudson.plugins.view.dashboard.stats.StatBuilds>
       </rightPortlets>
       <topPortlets/>
       <bottomPortlets/>
