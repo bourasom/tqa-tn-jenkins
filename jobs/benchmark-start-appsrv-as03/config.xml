@@ -16,6 +16,11 @@
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PLF_VERSION</name>
+          <description>The reference version (tag) of Platform with which we are comparing our settings</description>
+          <defaultValue>3.5.4</defaultValue>
+        </hudson.model.StringParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>BYTEMAN_SCRIPT_FILE</name>
           <description>The byteman script to activate</description>
