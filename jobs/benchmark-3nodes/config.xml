@@ -30,6 +30,7 @@
               <string>PERF_PLF_INTRANET_FORUM_READ_TOPIC.jmx</string>
               <string>PERF_PLF_INTRANET_FORUM_WRITE_POST.jmx</string>
               <string>PERF_PLF_INTRANET_PORTAL_LOGIN.jmx</string>
+              <string>PERF_PLF_INTRANET_SOCIAL_READ_HOME.jmx</string>
               <string>PERF_PLF_INTRANET_SOCIAL_READ_PROFILE.jmx</string>
               <string>PERF_PLF_INTRANET_SOCIAL_READ_SPACE_HOME.jmx</string>
               <string>PERF_PLF_INTRANET_WIKI_READ_PAGE.jmx</string>
