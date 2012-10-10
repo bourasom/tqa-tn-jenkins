@@ -3,7 +3,7 @@
   <disabledAdministrativeMonitors>
     <string>hudson.diagnosis.TooManyJobsButNoView</string>
   </disabledAdministrativeMonitors>
-  <version>1.485</version>
+  <version>1.484</version>
   <numExecutors>1</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
@@ -43,7 +43,6 @@
     <permission>hudson.model.Item.Cancel:fdrouet</permission>
     <permission>hudson.model.Item.Configure:aheritier</permission>
     <permission>hudson.model.Item.Configure:fdrouet</permission>
-    <permission>hudson.model.Item.Configure:obouras</permission>
     <permission>hudson.model.Item.Create:aheritier</permission>
     <permission>hudson.model.Item.Create:fdrouet</permission>
     <permission>hudson.model.Item.Delete:aheritier</permission>
