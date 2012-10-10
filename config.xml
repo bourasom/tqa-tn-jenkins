@@ -235,7 +235,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>benchmark-db-flush-host</string>
+        <string>benchmark-db-flush-hosts</string>
       </jobNames>
       <jobFilters/>
       <columns>
