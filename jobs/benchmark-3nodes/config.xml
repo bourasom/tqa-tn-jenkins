@@ -26,6 +26,7 @@
           <description>The scenario to execute</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
+              <string>PERF_PLF_INTRANET_ECMS_READ_PUBLIC.jmx</string>
               <string>PERF_PLF_INTRANET_ECMS_READ_FILE_EXPLORER_BROWSE.jmx</string>
               <string>PERF_PLF_INTRANET_FORUM_READ_TOPIC.jmx</string>
               <string>PERF_PLF_INTRANET_FORUM_WRITE_POST.jmx</string>
