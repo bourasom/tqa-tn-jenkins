@@ -19,7 +19,7 @@
         <hudson.model.StringParameterDefinition>
           <name>PLF_VERSION</name>
           <description>The reference version (tag) of Platform with which we are comparing our settings</description>
-          <defaultValue>3.5.4</defaultValue>
+          <defaultValue>3.5.5</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.ChoiceParameterDefinition>
           <name>SCENARIO_FILE</name>
