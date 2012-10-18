@@ -90,7 +90,5 @@
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers>
-    <org.jenkinsci.plugins.envinject.EnvInjectListener_-JobSetupEnvironmentWrapper plugin="envinject@1.72"/>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
