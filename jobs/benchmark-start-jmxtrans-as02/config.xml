@@ -15,7 +15,7 @@
       <contributors/>
     </EnvInjectJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.24">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.25">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -91,5 +91,7 @@ BUILD_ID=dontKillMe nohup ${WORKSPACE}/jmxtrans/jmxtrans.sh start</command>
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <org.jenkinsci.plugins.envinject.EnvInjectListener_-JobSetupEnvironmentWrapper plugin="envinject@1.72"/>
+  </buildWrappers>
 </project>
