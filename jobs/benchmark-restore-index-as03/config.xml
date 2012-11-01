@@ -15,7 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>rm -rf /mnt/app/PLF/current-jboss-jenkins/server/default/data
-rsync -a /mnt/nas/DATASETS/DB-INT2/DATASET-PLF-3.5.x-Intranet_LOT2-V02-UPGRADED/gatein-indexes/data /mnt/app/PLF/current-jboss-jenkins/server/default/</command>
+rsync -a /mnt/nas/DATASETS/DB-INT2/DATASET-PLF-3.5.x-Intranet_LOT2/gatein-indexes/data /mnt/app/PLF/current-jboss-jenkins/server/default/</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>

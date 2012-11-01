@@ -14,8 +14,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>rm -rf /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data
-mv /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data.backup /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data</command>
+      <command>rm -rf /mnt/data/DS/PLF3.5.x/Intranet_LOT2/data
+mv /mnt/data/DS/PLF3.5.x/Intranet_LOT2/data.backup /mnt/data/DS/PLF3.5.x/Intranet_LOT2/data</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
