@@ -17,7 +17,7 @@
       <command>rm -rf /mnt/data/DS/PLF3.5.x/Intranet_LOT2/tmp
 mkdir /mnt/data/DS/PLF3.5.x/Intranet_LOT2/tmp
 tar -C /mnt/data/DS/PLF3.5.x/Intranet_LOT2/tmp -xf /mnt/nas/DATASETS/DB-INT2/DATASET-PLF-3.5.x-Intranet_LOT2/gatein-data/data.tar
-mv /mnt/data/DS/PLF3.5.x/Intranet_LOT2/tmp/data /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data.backup
+mv /mnt/data/DS/PLF3.5.x/Intranet_LOT2/tmp/data /mnt/data/DS/PLF3.5.x/Intranet_LOT2/data.backup
 rm -rf /mnt/data/DS/PLF3.5.x/Intranet_LOT2/tmp</command>
     </hudson.tasks.Shell>
   </builders>
