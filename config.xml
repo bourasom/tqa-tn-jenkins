@@ -235,6 +235,7 @@
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>benchmark-db-flush-hosts</string>
+        <string>benchmark-recreate-db-origin</string>
       </jobNames>
       <jobFilters/>
       <columns>
