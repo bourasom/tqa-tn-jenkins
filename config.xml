@@ -13,6 +13,7 @@
     <permission>hudson.model.Computer.Connect:aheritier</permission>
     <permission>hudson.model.Computer.Connect:atleti</permission>
     <permission>hudson.model.Computer.Connect:fdrouet</permission>
+    <permission>hudson.model.Computer.Connect:kmenzli</permission>
     <permission>hudson.model.Computer.Connect:obouras</permission>
     <permission>hudson.model.Computer.Create:aheritier</permission>
     <permission>hudson.model.Computer.Create:fdrouet</permission>
@@ -21,6 +22,7 @@
     <permission>hudson.model.Computer.Disconnect:aheritier</permission>
     <permission>hudson.model.Computer.Disconnect:atleti</permission>
     <permission>hudson.model.Computer.Disconnect:fdrouet</permission>
+    <permission>hudson.model.Computer.Disconnect:kmenzli</permission>
     <permission>hudson.model.Computer.Disconnect:obouras</permission>
     <permission>hudson.model.Hudson.Administer:aheritier</permission>
     <permission>hudson.model.Hudson.Administer:fdrouet</permission>
@@ -30,6 +32,7 @@
     <permission>hudson.model.Hudson.Read:anonymous</permission>
     <permission>hudson.model.Hudson.Read:atleti</permission>
     <permission>hudson.model.Hudson.Read:fdrouet</permission>
+    <permission>hudson.model.Hudson.Read:kmenzli</permission>
     <permission>hudson.model.Hudson.Read:obouras</permission>
     <permission>hudson.model.Hudson.RunScripts:aheritier</permission>
     <permission>hudson.model.Hudson.RunScripts:fdrouet</permission>
@@ -38,6 +41,7 @@
     <permission>hudson.model.Item.Build:aheritier</permission>
     <permission>hudson.model.Item.Build:atleti</permission>
     <permission>hudson.model.Item.Build:fdrouet</permission>
+    <permission>hudson.model.Item.Build:kmenzli</permission>
     <permission>hudson.model.Item.Build:obouras</permission>
     <permission>hudson.model.Item.Cancel:aheritier</permission>
     <permission>hudson.model.Item.Cancel:fdrouet</permission>
@@ -50,46 +54,54 @@
     <permission>hudson.model.Item.Discover:aheritier</permission>
     <permission>hudson.model.Item.Discover:atleti</permission>
     <permission>hudson.model.Item.Discover:fdrouet</permission>
+    <permission>hudson.model.Item.Discover:kmenzli</permission>
     <permission>hudson.model.Item.Discover:obouras</permission>
     <permission>hudson.model.Item.ExtendedRead:aheritier</permission>
     <permission>hudson.model.Item.ExtendedRead:atleti</permission>
     <permission>hudson.model.Item.ExtendedRead:fdrouet</permission>
+    <permission>hudson.model.Item.ExtendedRead:kmenzli</permission>
     <permission>hudson.model.Item.ExtendedRead:obouras</permission>
     <permission>hudson.model.Item.Read:aheritier</permission>
     <permission>hudson.model.Item.Read:anonymous</permission>
     <permission>hudson.model.Item.Read:atleti</permission>
     <permission>hudson.model.Item.Read:fdrouet</permission>
+    <permission>hudson.model.Item.Read:kmenzli</permission>
     <permission>hudson.model.Item.Read:obouras</permission>
     <permission>hudson.model.Item.Workspace:aheritier</permission>
     <permission>hudson.model.Item.Workspace:anonymous</permission>
     <permission>hudson.model.Item.Workspace:atleti</permission>
     <permission>hudson.model.Item.Workspace:fdrouet</permission>
+    <permission>hudson.model.Item.Workspace:kmenzli</permission>
     <permission>hudson.model.Item.Workspace:obouras</permission>
     <permission>hudson.model.Run.Delete:aheritier</permission>
     <permission>hudson.model.Run.Delete:fdrouet</permission>
     <permission>hudson.model.Run.Update:aheritier</permission>
     <permission>hudson.model.Run.Update:atleti</permission>
     <permission>hudson.model.Run.Update:fdrouet</permission>
+    <permission>hudson.model.Run.Update:kmenzli</permission>
     <permission>hudson.model.Run.Update:obouras</permission>
     <permission>hudson.model.View.Configure:aheritier</permission>
     <permission>hudson.model.View.Configure:atleti</permission>
     <permission>hudson.model.View.Configure:fdrouet</permission>
+    <permission>hudson.model.View.Configure:kmenzli</permission>
     <permission>hudson.model.View.Configure:obouras</permission>
     <permission>hudson.model.View.Create:aheritier</permission>
     <permission>hudson.model.View.Create:atleti</permission>
     <permission>hudson.model.View.Create:fdrouet</permission>
+    <permission>hudson.model.View.Create:kmenzli</permission>
     <permission>hudson.model.View.Create:obouras</permission>
     <permission>hudson.model.View.Delete:aheritier</permission>
     <permission>hudson.model.View.Delete:fdrouet</permission>
     <permission>hudson.model.View.Read:aheritier</permission>
     <permission>hudson.model.View.Read:atleti</permission>
     <permission>hudson.model.View.Read:fdrouet</permission>
+    <permission>hudson.model.View.Read:kmenzli</permission>
     <permission>hudson.model.View.Read:obouras</permission>
     <permission>hudson.scm.SCM.Tag:aheritier</permission>
     <permission>hudson.scm.SCM.Tag:fdrouet</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
-    <disableSignup>false</disableSignup>
+    <disableSignup>true</disableSignup>
     <enableCaptcha>false</enableCaptcha>
   </securityRealm>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
