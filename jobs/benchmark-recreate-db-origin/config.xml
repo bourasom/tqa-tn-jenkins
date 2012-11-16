@@ -16,10 +16,10 @@
     <hudson.tasks.Shell>
       <command>sudo service puppet stop || true
 sudo service mysql stop || true
-sudo rm -rf /mnt/data/mysql.origin /mnt/data/mysql.backup /mnt/data/mysql
+sudo rm -rf /mnt/data/mysql.origin /mnt/data/mysql
 sudo tar -C /mnt/data -xf /mnt/nas/DATASETS/DB-INT2/DATASET-PLF-3.5.x-Intranet_LOT2/mysql-data/mysql.tar
 sudo cp -rpf /mnt/data/mysql /mnt/data/mysql.origin
-sudo sudo chown -R mysql:mysql /mnt/data/mysql</command>
+sudo chown -R mysql:mysql /mnt/data/mysql</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
