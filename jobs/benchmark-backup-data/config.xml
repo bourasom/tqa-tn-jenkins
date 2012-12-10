@@ -1,15 +1,43 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
+  <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>DATASET_NAME</name>
+          <description></description>
+          <defaultValue>DATASET-PLF-3.5.5-Intranet_LOT2-V02</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
-  <canRoam>true</canRoam>
+  <assignedNode>tqa-data01</assignedNode>
+  <canRoam>false</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>mkdir -p /mnt/data/datasets/${DATASET_NAME}/gatein-data
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/gatein-indexes/data/gatein/jcr
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/ldap
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/mysql
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/sql-dump
+rm /mnt/data/datasets/DATASET-PLF-3.5.x-Intranet_LOT2
+ln -s /mnt/data/datasets/${DATASET_NAME} /mnt/data/datasets/DATASET-PLF-3.5.x-Intranet_LOT2
+cd /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02
+time tar -cf /mnt/data/datasets/${DATASET_NAME}/gatein-data/data.tar data
+time cp -pr /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data/gatein/jcr/index /mnt/data/datasets/${DATASET_NAME}/gatein-indexes/data/gatein/jcr/index
+time rm -rf data.backup/
+time cp -prf data data.backup</command>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers/>
   <buildWrappers/>
 </project>
