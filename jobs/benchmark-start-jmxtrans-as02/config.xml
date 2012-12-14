@@ -4,7 +4,7 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <EnvInjectJobProperty plugin="envinject@1.72">
+    <EnvInjectJobProperty plugin="envinject@1.73">
       <info>
         <propertiesContent>TARGET_JMX_HOST=tqa-as02.exoplatform.lan</propertiesContent>
         <loadFilesFromMaster>false</loadFilesFromMaster>
@@ -15,7 +15,7 @@
       <contributors/>
     </EnvInjectJobProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.25">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.26">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -91,5 +91,7 @@ BUILD_ID=dontKillMe nohup ${WORKSPACE}/jmxtrans/jmxtrans.sh start</command>
       <presendScript></presendScript>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
-  <buildWrappers/>
+  <buildWrappers>
+    <org.jenkinsci.plugins.envinject.EnvInjectListener_-JobSetupEnvironmentWrapper plugin="envinject@1.73"/>
+  </buildWrappers>
 </project>
