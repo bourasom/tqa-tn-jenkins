@@ -32,6 +32,7 @@
             <a class="string-array">
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT2_Users_20000.csv</string>
+              <string>PERF_PLF_INTRANET_DBINT2_Users_29450.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_Users_29950.csv</string>
             </a>
           </choices>
@@ -182,7 +183,7 @@
   </properties>
   <scm class="org.jenkinsci.plugins.multiplescms.MultiSCM" plugin="multiple-scms@0.2">
     <scms>
-      <hudson.plugins.git.GitSCM plugin="git@1.1.24">
+      <hudson.plugins.git.GitSCM plugin="git@1.1.26">
         <configVersion>2</configVersion>
         <userRemoteConfigs>
           <hudson.plugins.git.UserRemoteConfig>
@@ -219,7 +220,7 @@
         <includedRegions></includedRegions>
         <scmName></scmName>
       </hudson.plugins.git.GitSCM>
-      <hudson.plugins.git.GitSCM plugin="git@1.1.24">
+      <hudson.plugins.git.GitSCM plugin="git@1.1.26">
         <configVersion>2</configVersion>
         <userRemoteConfigs>
           <hudson.plugins.git.UserRemoteConfig>
@@ -266,7 +267,7 @@
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <EnvInjectBuilder plugin="envinject@1.72">
+    <EnvInjectBuilder plugin="envinject@1.73">
       <info>
         <propertiesContent>SCENARIO_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${SCENARIO_FILE}
 CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/csv/
@@ -301,7 +302,7 @@ ARCHIVE_RESULTS=false</propertiesContent>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers>
-    <EnvInjectPasswordWrapper plugin="envinject@1.72">
+    <EnvInjectPasswordWrapper plugin="envinject@1.73">
       <injectGlobalPasswords>true</injectGlobalPasswords>
       <passwordEntries/>
     </EnvInjectPasswordWrapper>
