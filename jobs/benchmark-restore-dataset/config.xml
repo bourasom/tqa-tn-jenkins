@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<com.tikal.jenkins.plugins.multijob.MultiJobProject>
+<com.tikal.jenkins.plugins.multijob.MultiJobProject plugin="jenkins-multijob-plugin@1.7">
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
@@ -17,33 +17,45 @@
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-db</jobName>
-          <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
+          <configs class="java.util.Collections$EmptyList"/>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-data</jobName>
-          <jobProperties></jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
+          <configs class="java.util.Collections$EmptyList" reference="../../com.tikal.jenkins.plugins.multijob.PhaseJobsConfig/configs"/>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-index-as01</jobName>
-          <jobProperties>NODE=tqa-as01</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
+          <configs>
+            <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
+              <jobProperties>NODE=tqa-as01</jobProperties>
+            </com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
+          </configs>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-index-as02</jobName>
-          <jobProperties>NODE=tqa-as02</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
+          <configs>
+            <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
+              <jobProperties>NODE=tqa-as02</jobProperties>
+            </com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
+          </configs>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-index-as03</jobName>
-          <jobProperties>NODE=tqa-as03</jobProperties>
           <currParams>true</currParams>
           <exposedSCM>false</exposedSCM>
+          <configs>
+            <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
+              <jobProperties>NODE=tqa-as03</jobProperties>
+            </com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
+          </configs>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
       </phaseJobs>
       <continuationCondition>SUCCESSFUL</continuationCondition>
