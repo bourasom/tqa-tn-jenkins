@@ -17,19 +17,19 @@
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-db</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs class="java.util.Collections$EmptyList"/>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-data</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs class="java.util.Collections$EmptyList" reference="../../com.tikal.jenkins.plugins.multijob.PhaseJobsConfig/configs"/>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-index-as01</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
@@ -39,7 +39,7 @@
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-index-as02</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
@@ -49,7 +49,7 @@
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-restore-index-as03</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
