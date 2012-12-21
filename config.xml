@@ -122,7 +122,7 @@
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.21">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.22">
         <host>tqa-as01.exoplatform.lan</host>
         <port>22</port>
         <username>tqawork</username>
@@ -139,7 +139,7 @@
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.21">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.22">
         <host>tqa-as02.exoplatform.lan</host>
         <port>22</port>
         <username>tqawork</username>
@@ -156,7 +156,7 @@
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.21">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.22">
         <host>tqa-as03.exoplatform.lan</host>
         <port>22</port>
         <username>tqawork</username>
@@ -173,7 +173,7 @@
       <numExecutors>2</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.21">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.22">
         <host>tqa-inj01.exoplatform.lan</host>
         <port>22</port>
         <username>tqawork</username>
@@ -190,7 +190,7 @@
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.21">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.22">
         <host>tqa-data01.exoplatform.lan</host>
         <port>22</port>
         <username>tqawork</username>
@@ -207,7 +207,7 @@
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.21">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.22">
         <host>tqa-db01.exoplatform.lan</host>
         <port>22</port>
         <username>tqawork</username>
@@ -224,7 +224,7 @@
       <numExecutors>1</numExecutors>
       <mode>EXCLUSIVE</mode>
       <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.21">
+      <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@0.22">
         <host>tqa-mon01.exoplatform.lan</host>
         <port>22</port>
         <username>tqawork</username>
@@ -238,7 +238,7 @@
   <quietPeriod>1</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
-    <hudson.plugins.view.dashboard.Dashboard plugin="dashboard-view@2.3">
+    <hudson.plugins.view.dashboard.Dashboard plugin="dashboard-view@2.4">
       <owner class="hudson" reference="../../.."/>
       <name>TQA Dashboard</name>
       <filterExecutors>false</filterExecutors>
