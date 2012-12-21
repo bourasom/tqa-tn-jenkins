@@ -199,7 +199,7 @@ cd -</command>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-db-flush-hosts</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs class="java.util.Collections$EmptyList"/>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
@@ -211,7 +211,7 @@ cd -</command>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-start-appsrv-as02</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
@@ -231,7 +231,7 @@ JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-start-jmxtrans-as02</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs class="java.util.Collections$EmptyList" reference="../../../../com.tikal.jenkins.plugins.multijob.MultiJobBuilder/phaseJobs/com.tikal.jenkins.plugins.multijob.PhaseJobsConfig/configs"/>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
@@ -243,7 +243,7 @@ JPROFILER_ACTIVATED=${JPROFILER_ACTIVATED}</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-launch-jmeter-warmup</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
@@ -281,7 +281,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-launch-jmeter-tests</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
@@ -319,7 +319,7 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
       <phaseJobs>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-stop-appsrv-as02</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
@@ -329,13 +329,13 @@ GROUPING_REQUESTS_BY_USERS_LEVEL=false</jobProperties>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-stop-jmxtrans-as02</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs class="java.util.Collections$EmptyList" reference="../../../../com.tikal.jenkins.plugins.multijob.MultiJobBuilder/phaseJobs/com.tikal.jenkins.plugins.multijob.PhaseJobsConfig/configs"/>
         </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
         <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
           <jobName>benchmark-extract-results</jobName>
-          <currParams>true</currParams>
+          <currParams>false</currParams>
           <exposedSCM>false</exposedSCM>
           <configs>
             <com.tikal.jenkins.plugins.multijob.PredefinedBuildParameters>
