@@ -267,7 +267,7 @@
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <EnvInjectBuilder plugin="envinject@1.73">
+    <EnvInjectBuilder plugin="envinject@1.78">
       <info>
         <propertiesContent>SCENARIO_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${SCENARIO_FILE}
 CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/csv/
@@ -279,7 +279,7 @@ ARCHIVE_RESULTS=false</propertiesContent>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.24.1">
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.25">
       <recipientList>$DEFAULT_RECIPIENTS</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
@@ -291,6 +291,7 @@ ARCHIVE_RESULTS=false</propertiesContent>
             <sendToRequester>false</sendToRequester>
             <includeCulprits>false</includeCulprits>
             <sendToRecipientList>true</sendToRecipientList>
+            <attachBuildLog>false</attachBuildLog>
           </email>
         </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
       </configuredTriggers>
@@ -299,10 +300,11 @@ ARCHIVE_RESULTS=false</propertiesContent>
       <defaultContent>$DEFAULT_CONTENT</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript></presendScript>
+      <attachBuildLog>false</attachBuildLog>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers>
-    <EnvInjectPasswordWrapper plugin="envinject@1.73">
+    <EnvInjectPasswordWrapper plugin="envinject@1.78">
       <injectGlobalPasswords>true</injectGlobalPasswords>
       <passwordEntries/>
     </EnvInjectPasswordWrapper>

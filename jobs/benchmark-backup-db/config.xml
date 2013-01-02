@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>DATASET_NAME</name>
+          <description></description>
+          <defaultValue>DATASET-PLF-3.5.5-Intranet_LOT2-V03</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>tqa-db01</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash -xeu
+sudo service puppet stop || true
+sudo service mysql stop || true
+sudo time /bin/tar -C /mnt/data/ -cf /mnt/nfs4/datasets/${DATASET_NAME}/mysql-data/mysql.tar mysql/
+tar -tvf /mnt/nfs4/datasets/${DATASET_NAME}/mysql-data/mysql.tar
+sudo time /bin/rm -rf /mnt/data/mysql.backup /mnt/data/mysql.origin
+sudo time /bin/cp -prf /mnt/data/mysql /mnt/data/mysql.backup
+sudo time /bin/cp -prf /mnt/data/mysql /mnt/data/mysql.origin
+sudo service puppet start
+sudo service mysql start</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

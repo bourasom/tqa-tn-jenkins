@@ -38,7 +38,7 @@ rsync --partial -av jenkinsa@qaf01.exoplatform.org:${DATASET_ROOT_DIR_ON_QAF01}/
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.plugins.emailext.ExtendedEmailPublisher>
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.25">
       <recipientList>$DEFAULT_RECIPIENTS</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
@@ -50,11 +50,13 @@ rsync --partial -av jenkinsa@qaf01.exoplatform.org:${DATASET_ROOT_DIR_ON_QAF01}/
             <sendToRequester>false</sendToRequester>
             <includeCulprits>false</includeCulprits>
             <sendToRecipientList>true</sendToRecipientList>
+            <attachBuildLog>false</attachBuildLog>
           </email>
         </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
       </configuredTriggers>
       <defaultSubject>$DEFAULT_SUBJECT</defaultSubject>
       <defaultContent>$DEFAULT_CONTENT</defaultContent>
+      <attachBuildLog>false</attachBuildLog>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>

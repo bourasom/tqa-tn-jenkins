@@ -19,7 +19,7 @@
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
-  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.24">
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.26">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
@@ -82,7 +82,7 @@ ${WORKSPACE}/scripts/stopAppServer.sh</command>
       <artifacts>jboss/server/default/log/server.log,results/stopJBossServer.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
-    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.24.1">
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.25">
       <recipientList>$DEFAULT_RECIPIENTS</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
@@ -94,6 +94,7 @@ ${WORKSPACE}/scripts/stopAppServer.sh</command>
             <sendToRequester>false</sendToRequester>
             <includeCulprits>false</includeCulprits>
             <sendToRecipientList>true</sendToRecipientList>
+            <attachBuildLog>false</attachBuildLog>
           </email>
         </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
       </configuredTriggers>
@@ -102,6 +103,7 @@ ${WORKSPACE}/scripts/stopAppServer.sh</command>
       <defaultContent>$DEFAULT_CONTENT</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript></presendScript>
+      <attachBuildLog>false</attachBuildLog>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>

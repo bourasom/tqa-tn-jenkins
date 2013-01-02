@@ -4,7 +4,7 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <EnvInjectJobProperty plugin="envinject@1.75">
+    <EnvInjectJobProperty plugin="envinject@1.78">
       <info>
         <propertiesContent>TARGET_JMX_HOST=tqa-as02.exoplatform.lan</propertiesContent>
         <loadFilesFromMaster>false</loadFilesFromMaster>

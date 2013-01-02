@@ -47,7 +47,7 @@
   </properties>
   <scm class="org.jenkinsci.plugins.multiplescms.MultiSCM" plugin="multiple-scms@0.2">
     <scms>
-      <hudson.plugins.git.GitSCM plugin="git@1.1.24">
+      <hudson.plugins.git.GitSCM plugin="git@1.1.26">
         <configVersion>2</configVersion>
         <userRemoteConfigs>
           <hudson.plugins.git.UserRemoteConfig>
@@ -84,7 +84,7 @@
         <includedRegions></includedRegions>
         <scmName></scmName>
       </hudson.plugins.git.GitSCM>
-      <hudson.plugins.git.GitSCM plugin="git@1.1.24">
+      <hudson.plugins.git.GitSCM plugin="git@1.1.26">
         <configVersion>2</configVersion>
         <userRemoteConfigs>
           <hudson.plugins.git.UserRemoteConfig>
@@ -150,7 +150,7 @@ BUILD_ID=dontKillMe ${WORKSPACE}/benchmark-scripts/startAppServer.sh</command>
       <artifacts>jboss/server/default/deploy/jbossweb.sar/server.xml,jboss/server/default/conf/gatein/jcr/jbosscache/local/*,jboss/server/default/conf/gatein/jcr/jbosscache/cluster/*,jboss/server/default/deploy/gatein-ds.xml,jboss/server/default/conf/gatein/configuration.properties,jboss/bin/run.conf,results/startJBossServer.env</artifacts>
       <latestOnly>false</latestOnly>
     </hudson.tasks.ArtifactArchiver>
-    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.24.1">
+    <hudson.plugins.emailext.ExtendedEmailPublisher plugin="email-ext@2.25">
       <recipientList>$DEFAULT_RECIPIENTS</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
@@ -162,6 +162,7 @@ BUILD_ID=dontKillMe ${WORKSPACE}/benchmark-scripts/startAppServer.sh</command>
             <sendToRequester>false</sendToRequester>
             <includeCulprits>false</includeCulprits>
             <sendToRecipientList>true</sendToRecipientList>
+            <attachBuildLog>false</attachBuildLog>
           </email>
         </hudson.plugins.emailext.plugins.trigger.FailureTrigger>
       </configuredTriggers>
@@ -170,6 +171,7 @@ BUILD_ID=dontKillMe ${WORKSPACE}/benchmark-scripts/startAppServer.sh</command>
       <defaultContent>$DEFAULT_CONTENT</defaultContent>
       <attachmentsPattern></attachmentsPattern>
       <presendScript></presendScript>
+      <attachBuildLog>false</attachBuildLog>
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>

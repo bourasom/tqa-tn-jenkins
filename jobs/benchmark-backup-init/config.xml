@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>DATASET_NAME</name>
+          <description></description>
+          <defaultValue>DATASET-PLF-3.5.5-Intranet_LOT2-V03</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>tqa-data01</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+if [ -d /mnt/data/datasets/${DATASET_NAME} ]; then 
+  CURRENT_DATE=`date -u &quot;+%Y%m%d-%H%M%S-UTC&quot;`; 
+  echo &quot;WARN : Previous archive /mnt/data/datasets/${DATASET_NAME} moved to /mnt/data/datasets/archive-${DATASET_NAME}-${CURRENT_DATE} &quot;;
+  echo &quot;WARN : REMOVE IT if useless&quot;;
+  mv /mnt/data/datasets/${DATASET_NAME} /mnt/data/datasets/archive-${DATASET_NAME}-${CURRENT_DATE}; 
+fi;
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/gatein-data
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/gatein-indexes/data/jcr
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/ldap
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/mysql-data
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/sql-dump
+rm /mnt/data/datasets/DATASET-PLF-3.5.x-Intranet_LOT2
+cd /mnt/data/datasets
+ln -s ${DATASET_NAME} DATASET-PLF-3.5.x-Intranet_LOT2</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
