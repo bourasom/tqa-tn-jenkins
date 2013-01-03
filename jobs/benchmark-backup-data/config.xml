@@ -25,7 +25,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>mkdir -p /mnt/data/datasets/${DATASET_NAME}/gatein-data
-mkdir -p /mnt/data/datasets/${DATASET_NAME}/gatein-indexes/data/gatein/jcr
+mkdir -p /mnt/data/datasets/${DATASET_NAME}/gatein-indexes/data/jcr
 mkdir -p /mnt/data/datasets/${DATASET_NAME}/ldap
 mkdir -p /mnt/data/datasets/${DATASET_NAME}/mysql
 mkdir -p /mnt/data/datasets/${DATASET_NAME}/sql-dump
@@ -33,7 +33,7 @@ rm /mnt/data/datasets/DATASET-PLF-3.5.x-Intranet_LOT2
 ln -s /mnt/data/datasets/${DATASET_NAME} /mnt/data/datasets/DATASET-PLF-3.5.x-Intranet_LOT2
 cd /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02
 time tar -cf /mnt/data/datasets/${DATASET_NAME}/gatein-data/data.tar data
-time cp -pr /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data/gatein/jcr/index /mnt/data/datasets/${DATASET_NAME}/gatein-indexes/data/gatein/jcr/index
+time cp -pr /mnt/data/DS/PLF3.5.x/Intranet_LOT2_V02/data/jcr/index /mnt/data/datasets/${DATASET_NAME}/gatein-indexes/data/jcr/index
 time rm -rf data.backup/
 time cp -prf data data.backup</command>
     </hudson.tasks.Shell>
