@@ -49,6 +49,7 @@
               <string>PERF_PLF_INTRANET_DBINT2_Users_20000.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_Users_29450.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_Users_29950.csv</string>
+              <string>PERF_PLF_INTRANET_EXPRESSV1_Users_500.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -81,6 +82,7 @@
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT2_WIKI_PAGE_WikiLinks_1000.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_WIKI_PAGE_WikiLinks_115615.csv</string>
+              <string>PERF_PLF_INTRANET_EXPRESSV1_WIKI_PAGE_WikiLinks_1110.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>

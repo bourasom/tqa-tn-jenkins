@@ -34,6 +34,7 @@
               <string>PERF_PLF_INTRANET_DBINT2_Users_20000.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_Users_29450.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_Users_29950.csv</string>
+              <string>PERF_PLF_INTRANET_EXPRESSV1_Users_500.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -66,6 +67,7 @@
               <string>NONE</string>
               <string>PERF_PLF_INTRANET_DBINT2_WIKI_PAGE_WikiLinks_1000.csv</string>
               <string>PERF_PLF_INTRANET_DBINT2_WIKI_PAGE_WikiLinks_115615.csv</string>
+              <string>PERF_PLF_INTRANET_EXPRESSV1_WIKI_PAGE_WikiLinks_1110.csv</string>
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
@@ -269,8 +271,8 @@
   <builders>
     <EnvInjectBuilder plugin="envinject@1.78">
       <info>
-        <propertiesContent>SCENARIO_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/${SCENARIO_FILE}
-CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_3.5.x/intranet-db-int2/csv/</propertiesContent>
+        <propertiesContent>SCENARIO_PATH=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_4.0.x/intranet-express-v1/${SCENARIO_FILE}
+CSV_DATASET_FOLDER=${WORKSPACE}/qa-performance-testsuite/performance/src/test/jmeter/plf_4.0.x/intranet-express-v1/csv/</propertiesContent>
       </info>
     </EnvInjectBuilder>
     <hudson.tasks.Shell>
