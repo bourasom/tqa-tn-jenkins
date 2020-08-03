@@ -1,0 +1,995 @@
+[
+  {
+    "name": "gatein-dep",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.gatein.dep.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "gatein-wci",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.gatein.wci.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },  
+  {
+    "name": "gatein-pc",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.gatein.pc.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "gatein-sso",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.gatein.sso.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "gatein-portal",
+    "git_organization": "meeds-io",
+    "labels": "gatein",
+    "maven_property_version": "org.exoplatform.gatein.portal.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "platform-ui",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.platform-ui.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 2
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },  
+  {
+    "name": "kernel",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.kernel.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "core",
+    "git_organization": "meeds-io",
+    "labels": "cf",
+    "maven_property_version": "org.exoplatform.core.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 2
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "ws",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.ws.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 3
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "maven-depmgt-pom",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.depmgt.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "17.0-${release-version}",
+      "current_snapshot_version": "17.x-SNAPSHOT",
+      "next_snapshot_version": "17.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "commons",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.commons.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 3
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "social",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.social.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 5
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "gamification",
+    "catalog": {
+      "id": "gamification"
+    },
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "addon.exo.gamification.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 2
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "kudos",
+    "catalog": {
+      "id": "kudos"
+    },
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "addon.exo.kudos.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 2
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "perk-store",
+    "catalog": {
+      "id": "perk-store"
+    },
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "addon.exo.perk-store.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 2
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "push-notifications",
+    "catalog": {
+      "id": "push-notifications"
+    },
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "addon.exo.push-notifications.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "wallet",
+    "catalog": {
+      "id": "wallet"
+    },
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "addon.exo.wallet.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 2
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "app-center",
+    "catalog": {
+      "id": "exo-app-center"
+    },
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "addon.exo.app-center.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "exo-es-embedded",
+    "catalog": {
+      "id": "exo-es-embedded"
+    },
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "addon.exo.es.embedded.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "addons-manager",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "org.exoplatform.platform.addons-manager.version",
+    "container": {
+      "image": "exoplatform/release:jdk7-maven32",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "meeds",
+    "git_organization": "meeds-io",
+    "labels": "meeds",
+    "maven_property_version": "io.meeds.distribution.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 11
+    },
+    "release": {
+      "branch": "develop",
+      "version": "1.0.0-${release-version}",
+      "current_snapshot_version": "1.0.x-SNAPSHOT",
+      "next_snapshot_version": "1.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "ert-contract",
+    "catalog": {
+      "id": "ert-contract"
+    },
+    "git_organization": "meeds-io",
+    "labels": "ert-contract",
+    "maven_property_version": "org.exoplatform.wallet.ert-contract.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven35",
+      "step": 2
+    },
+    "release": {
+      "branch": "develop",
+      "version": "1.0.3",
+      "current_snapshot_version": "1.0.x-SNAPSHOT",
+      "next_snapshot_version": "1.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "wiki",
+    "git_organization": "exoplatform",
+    "labels": "plf",
+    "maven_property_version": "addon.exo.wiki.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 6
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "jcr",
+    "git_organization": "exoplatform",
+    "labels": "plf",
+    "maven_property_version": "addon.exo.jcr.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 4
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "ecms",
+    "git_organization": "exoplatform",
+    "labels": "plf",
+    "maven_property_version": "addon.exo.ecms.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 4
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "forum",
+    "git_organization": "exoplatform",
+    "labels": "plf",
+    "maven_property_version": "addon.exo.forum.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 7
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "calendar",
+    "git_organization": "exoplatform",
+    "labels": "plf",
+    "maven_property_version": "addon.exo.calendar.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 8
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "public"
+    }
+  },
+  {
+    "name": "cas-addon",
+    "catalog": {
+      "id": "exo-cas"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.cas.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "chat-application",
+    "catalog": {
+      "id": "exo-chat"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.chat.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "cmis-addon",
+    "catalog": {
+      "id": "exo-cmis-addon"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.cmis.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "data-upgrade",
+    "catalog": {
+      "id": "exo-data-upgrade"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.data-upgrade.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "digital-workplace",
+    "catalog": {
+      "id": "exo-digital-workplace"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.digital-workplace.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "1.0.0-${release-version}",
+      "current_snapshot_version": "1.0.x-SNAPSHOT",
+      "next_snapshot_version": "1.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "layout-management",
+    "catalog": {
+      "id": "exo-legacy-intranet"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.layout-management.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "1.0.0-${release-version}",
+      "current_snapshot_version": "1.0.x-SNAPSHOT",
+      "next_snapshot_version": "1.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "lecko",
+    "catalog": {
+      "id": "exo-lecko"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.lecko.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "legacy-intranet",
+    "catalog": {
+      "id": "exo-legacy-intranet"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.legacy-intranet.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "news",
+    "catalog": {
+      "id": "exo-news"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.news.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "onlyoffice",
+    "catalog": {
+      "id": "exo-onlyoffice"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.onlyoffice.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "openam-addon",
+    "catalog": {
+      "id": "exo-openam"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.openam.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "remote-edit",
+    "catalog": {
+      "id": "exo-remote-edit"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.remote-edit.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "saml2-addon",
+    "catalog": {
+      "id": "exo-saml"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.saml.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "spnego-addon",
+    "catalog": {
+      "id": "exo-spnego"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.spnego.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "task",
+    "catalog": {
+      "id": "exo-tasks"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.tasks.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "wcm-template-pack",
+    "catalog": {
+      "id": "exo-web-pack"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.web-pack.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "3.0.0-${release-version}",
+      "current_snapshot_version": "3.0.x-SNAPSHOT",
+      "next_snapshot_version": "3.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "web-conferencing",
+    "catalog": {
+      "id": "exo-web-conferencing"
+    },
+    "git_organization": "exoplatform",
+    "labels": "addons",
+    "maven_property_version": "addon.exo.web-conferencing.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "2.0.0-${release-version}",
+      "current_snapshot_version": "2.0.x-SNAPSHOT",
+      "next_snapshot_version": "2.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "addons"
+    }
+  },
+  {
+    "name": "platform-private-distributions",
+    "git_organization": "exoplatform",
+    "labels": "plf",
+    "maven_property_version": "org.exoplatform.platform.distributions.private.version",
+    "container": {
+      "image": "exoplatform/release:jdk8-maven33",
+      "step": 12
+    },
+    "release": {
+      "branch": "develop",
+      "version": "6.0.0-${release-version}",
+      "current_snapshot_version": "6.0.x-SNAPSHOT",
+      "next_snapshot_version": "6.0.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "private"
+    }
+  },
+  {
+    "name": "juzu",
+    "git_organization": "juzu",
+    "labels": "juzu",
+    "maven_property_version": "org.juzu.version",
+    "container": {
+      "image": "exoplatform/release:jdk7-maven32",
+      "step": 1
+    },
+    "release": {
+      "branch": "develop",
+      "version": "1.2.0",
+      "current_snapshot_version": "1.2.x-SNAPSHOT",
+      "next_snapshot_version": "1.2.x-SNAPSHOT",
+      "patches": "",
+      "patches_after_release": "",
+      "nexus_host": "exoplatform",
+      "nexus_staging_profile": "juzu"
+    }
+  }
+]
